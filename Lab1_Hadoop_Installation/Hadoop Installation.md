@@ -86,7 +86,7 @@ Hệ thống hiện thông báo:
 > Are you sure you want to continue connecting (yes/no)?
 
 Nhập "yes".
-<img src='figs/set_ssh_to_hdoop_user.png'>
+<img src='figs/set_ssh_to_hdoop_user.PNG'>
 
 #### Cài đặt Java
 
