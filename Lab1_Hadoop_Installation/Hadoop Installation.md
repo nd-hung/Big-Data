@@ -1,4 +1,4 @@
-<img src="figs/ntu_logo.png" align="left" width="50" height="50"> 
+<img src="figs/NTU_logo.png" align="left" width="50" height="50"> 
 <h1 style="text-align:center"> XỬ LÝ DỮ LIỆU LỚN </h1>
 
 <h1 style="text-align:center"> Bài thực hành 1: Cài đặt Hadoop </h1>
