@@ -71,7 +71,7 @@ Dùng lệnh "cat" để lưu khóa công khai thành khóa ủy quyền (author
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
-Thiết lập quyền truy cập đến ssh keys:
+Thiết lập quyền truy cập đến khóa ssh:
 
 ```shell
 chmod 0600 ~/.ssh/authorized_keys
