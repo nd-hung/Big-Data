@@ -63,7 +63,7 @@ sudo apt install openssh-server openssh-client -y
 ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 ```
 
-<img src="figs/hadoop_ssh_keygen.png" width=600 height=400>
+<img src="figs/hadoop_ssh_keygen.png" width="600" height="400">
 
 Dùng lệnh "cat" để lưu khóa công khai thành khóa ủy quyền (authorized keys) vào thư mục ssh:
 
