@@ -192,7 +192,6 @@ Mở file `core-site.xml`:
 ```shell
 sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml
 ```
-sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml
 
 Bổ sung các khai báo sau:
 ```xml
@@ -292,9 +291,4 @@ http://localhost:9870
 #### Truy cập YARN:
 ```
 http://localhost:8088
-```
-
-
-```python
-
 ```
