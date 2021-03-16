@@ -26,7 +26,7 @@ NameNode và DataNode cùng chạy trên một máy tính.
 Các tiến trình Hadoop (deamons) chạy trên một cụm nhiều máy tính vật lý.
 
 Bài thực hành này thực hiện cài đặt Hadoop chế độ giả lập phân tán trên môi trường Linux. 
-Các phiên bản phần mềm được sử dụng:
+Các phiên bản phần mềm được sử dụng bao gồm:
 - Hệ điều hành Ubuntu (https://releases.ubuntu.com/18.04/ubuntu-18.04.5-desktop-amd64.iso). 
 Có thể cài đặt Ubuntu trên môi trường máy ảo (Virtual Box, https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Win.exe)
 - Hadoop 3.2.1 (https://downloads.apache.org/hadoop/common/hadoop-3.2.1/hadoop-3.2.1.tar.gz)
