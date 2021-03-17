@@ -16,7 +16,7 @@
 
 
 ## Giới thiệu <a name="intro"/>
-Bài thực hành này thực hiện công việc đơn giản: đếm số lần xuất hiện của mỗi từ trong một tập dữ liệu văn bản.
+Bài thực hành này thực hiện đếm số lần xuất hiện của mỗi từ trong một tập dữ liệu văn bản.
 
 
 
