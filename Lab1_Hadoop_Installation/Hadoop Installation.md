@@ -116,7 +116,7 @@ Giải nén nguồn cài đặt Hadoop:
 tar xzf hadoop-3.2.2.tar.gz
 ```
 
-Toàn bộ các file của Hadoop sẽ được giải nén và lưu trong thư mục hadoop-3.2.2
+Toàn bộ các file của Hadoop sẽ được giải nén và lưu trong thư mục `hadoop-3.2.2`
 
 ### Thiết lập cấu hình Hadoop:
 Cấu hình Hadoop được thiết lập thông qua các file sau: 
@@ -128,7 +128,7 @@ Cấu hình Hadoop được thiết lập thông qua các file sau:
 - `yarn-site.xml`: file thiết lập YARN
 
 #### Thiết lập các biến môi trường cho Hadoop
-Mở file bashrc:
+Mở file `bashrc`:
 ```shell
 sudo nano ~/.bashrc
 ```
