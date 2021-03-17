@@ -30,9 +30,9 @@ Bài thực hành này thực hiện cài đặt Hadoop chế độ giả lập 
 Các phiên bản phần mềm được sử dụng bao gồm:
 - Hệ điều hành Ubuntu (https://releases.ubuntu.com/18.04/ubuntu-18.04.5-desktop-amd64.iso). 
 Có thể cài đặt Ubuntu trên môi trường máy ảo (Virtual Box, https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Win.exe)
-- Hadoop 3.2.2 (https://mirror.downloadvn.com/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz)
 - Java 8 (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 - Python 3 (Được cài sẵn trên Ubuntu 18.04)
+- Hadoop 3.2.2 (https://mirror.downloadvn.com/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz)
 
 
 ## Tạo tài khoản quản trị Hadoop <a name="create_hadoop_account"/>
@@ -67,7 +67,7 @@ sudo apt install openssh-server openssh-client -y
 ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 ```
 
-<img src="figs/hadoop_ssh_keygen.PNG" width="600" height="400">
+<img src="figs/hadoop_ssh_keygen.PNG">
 
 Dùng lệnh "cat" để lưu khóa công khai thành khóa ủy quyền (authorized keys) vào thư mục ssh:
 
@@ -293,10 +293,6 @@ stop-all.sh
 ```
 http://localhost:9870
 ```
-<iframe
-  src="figs/Namenode information.html"
-  style="width:100%; height:300px;"
-></iframe>
 
 #### Truy cập YARN:
 ```
