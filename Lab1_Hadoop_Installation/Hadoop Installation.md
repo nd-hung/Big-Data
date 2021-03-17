@@ -10,7 +10,6 @@
     * [Khởi động Hadoop](#start_hadoop)
     * [Dừng Hadoop](#stop_hadoop)
     * [Truy cập Hadoop qua trình duyệt Web](#hadoopUI)
-- [Chạy thử ứng dụng](#run_example) 
 
 
 ## Giới thiệu <a name="intro" />
