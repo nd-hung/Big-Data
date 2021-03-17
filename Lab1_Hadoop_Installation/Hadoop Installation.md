@@ -30,9 +30,9 @@ Bài thực hành này thực hiện cài đặt Hadoop chế độ giả lập 
 Các phiên bản phần mềm được sử dụng bao gồm:
 - Hệ điều hành Ubuntu (https://releases.ubuntu.com/18.04/ubuntu-18.04.5-desktop-amd64.iso). 
 Có thể cài đặt Ubuntu trên môi trường máy ảo (Virtual Box, https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Win.exe)
-- Hadoop 3.2.1 (https://downloads.apache.org/hadoop/common/hadoop-3.2.1/hadoop-3.2.1.tar.gz)
+- Hadoop 3.2.2 (https://mirror.downloadvn.com/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz)
 - Java 8 (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
-- Python 3.8 (https://www.python.org/downloads/release/python-385/)
+- Python 3 (Được cài sẵn trên Ubuntu 18.04)
 
 
 ## Tạo tài khoản quản trị Hadoop <a name="create_hadoop_account"/>
@@ -103,20 +103,20 @@ sudo apt install openjdk-8-jdk -y
 ## Cài đặt Hadoop <a name="hadoop_installation"/>
 
 ### Tải nguồn cài đặt Hadoop:
-Phiên bản Hadoop được sử dụng là 3.2.1. Đăng nhập vào tài khoản quản trị Hadoop (ở đây là "hdoop") và tải nguồn cài đặt:
+Phiên bản Hadoop được sử dụng là 3.2.2. Đăng nhập vào tài khoản quản trị Hadoop (ở đây là "hdoop") và tải nguồn cài đặt:
 
 ```shell
-wget https://downloads.apache.org/hadoop/common/hadoop-3.2.1/hadoop-3.2.1.tar.gz
+wget https://mirror.downloadvn.com/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz
 ```
-(Hoặc có thể copy nguồn cài Hadoop từ USB hay từ máy tính khác.)
+(Hoặc có thể copy nguồn cài Hadoop từ USB hay từ máy tính khác)
 
-Giải nén nguồn Hadoop: 
+Giải nén nguồn cài đặt Hadoop: 
 
 ```shell
-tar xzf hadoop-3.2.1.tar.gz
+tar xzf hadoop-3.2.2.tar.gz
 ```
 
-Toàn bộ các file của Hadoop sẽ được giải nén và lưu trong thư mục hadoop-3.2.1
+Toàn bộ các file của Hadoop sẽ được giải nén và lưu trong thư mục hadoop-3.2.2
 
 ### Thiết lập cấu hình Hadoop:
 Cấu hình Hadoop được thiết lập thông qua các file sau: 
@@ -137,7 +137,7 @@ Bổ sung các dòng sau vào cuối file:
 
 ```shell
 #Hadoop Related Options
-export HADOOP_HOME=/home/hdoop/hadoop-3.2.1
+export HADOOP_HOME=/home/hdoop/hadoop-3.2.2
 export HADOOP_INSTALL=$HADOOP_HOME
 export HADOOP_MAPRED_HOME=$HADOOP_HOME
 export HADOOP_COMMON_HOME=$HADOOP_HOME
@@ -253,7 +253,7 @@ Bổ sung khai báo sau:
 ```
 
 #### Định dạng HDFS 
-Cần phải định dạng HDFS trước khi bắt đầu sử dụng.
+Trước khi bắt đầu sử dụng Hadoop, cần định dạng hệ thống quản lý file HDFS.
 Thực hiện lệnh sau để định dạng HDFS:
 ```shell
 hdfs namenode -format
