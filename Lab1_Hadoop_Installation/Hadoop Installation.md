@@ -196,12 +196,13 @@ sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml
 Bổ sung các khai báo sau:
 ```xml
 <configuration>
-<property>
-<name>fs.defaultFS</name>
-<value>hdfs://localhost/</value>
-</property>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://localhost:9000</value>
+    </property>
 </configuration>
 ```
+
 
 #### Chỉnh sửa file `hdfs-site.xml`
 
@@ -226,10 +227,14 @@ sudo nano $HADOOP_HOME/etc/hadoop/mapred-site.xml
 Bổ sung các thiết lập sau:
 ```xml
 <configuration>
-<property>
-<name>mapreduce.framework.name</name>
-<value>yarn</value>
-</property>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+    <property>
+        <name>mapreduce.application.classpath</name>
+        <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
+    </property>
 </configuration>
 ```
 
@@ -241,14 +246,14 @@ sudo nano $HADOOP_HOME/etc/hadoop/yarn-site.xml
 Bổ sung khai báo sau:
 ```xml
 <configuration>
-<property>
-<name>yarn.resourcemanager.hostname</name>
-<value>localhost</value>
-</property>
-<property>
-<name>yarn.nodemanager.aux-services</name>
-<value>mapreduce_shuffle</value>
-</property>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.env-whitelist</name>
+        <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
+    </property>
 </configuration>
 ```
 
