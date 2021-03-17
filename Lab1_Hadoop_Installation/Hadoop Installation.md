@@ -44,7 +44,6 @@ Mở Ubuntu Terminal và nhập lệnh sau:
 sudo adduser hdoop 
 ```
 Trong đó "hdoop" là tên tài khoản mới. Nhập mật khẩu cho tài khoản mới khi được yêu cầu.
-<img src="figs/create_hadoop_account.png">
 
 ### Cấp quyền sudo cho tài khoản
 ```shell
@@ -294,6 +293,11 @@ stop-all.sh
 ```
 http://localhost:9870
 ```
+<iframe
+  src="figs/Namenode information.html"
+  style="width:100%; height:300px;"
+></iframe>
+
 #### Truy cập YARN:
 ```
 http://localhost:8088
