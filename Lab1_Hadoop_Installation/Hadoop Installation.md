@@ -10,6 +10,7 @@
     * [Khởi động Hadoop](#start_hadoop)
     * [Dừng Hadoop](#stop_hadoop)
     * [Truy cập Hadoop qua trình duyệt Web](#hadoopUI)
+- [Chạy thử ứng dụng](#run_example) 
 
 
 ## Giới thiệu <a name="intro" />
@@ -293,8 +294,12 @@ stop-all.sh
 ```
 http://localhost:9870
 ```
+<img src="figs/hadoop_ui.png">
+
 
 #### Truy cập YARN:
 ```
 http://localhost:8088
 ```
+<img src="figs/yarn_ui.png">
+
