@@ -1,7 +1,7 @@
 <img src="figs/NTU_logo.png" align="left" width="50" height="50"> 
 <h1 style="text-align:center"> XỬ LÝ DỮ LIỆU LỚN </h1>
 
-<h1 style="text-align:center"> Bài thực hành 1: Cài đặt Hadoop </h1>
+<h1 style="text-align:center"> Lab 1: Cài đặt Hadoop </h1>
 
 - [Giới thiệu](#intro) <br>
 - [Tạo tài khoản quản trị Hadoop](#create_hadoop_account) <br>
