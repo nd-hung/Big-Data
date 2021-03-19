@@ -1,7 +1,7 @@
 <img src="figs/NTU_logo.png" align="left" width="50" height="50" /> <br>
 <h1 style="text-align:center"> XỬ LÝ DỮ LIỆU LỚN </h1>
 
-<h1 style="text-align:center"> Bài thực hành 2: Word Count </h1>
+<h1 style="text-align:center"> Lab: Word Count </h1>
 
 - [Giới thiệu](#intro) <br>
 - [Hadoop Streaming](#hadoop_streaming) <br>
