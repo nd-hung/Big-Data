@@ -141,7 +141,7 @@ plt.show()
 
 Thực hiện các xử lý sau trên tập dữ liệu NCDC:
 - Tìm thời gian, tọa độ của nơi có nhiệt độ cao nhất mỗi năm.
-- Tìm địa điểm trên trái đất tương ứng với tọa độ nóng nhất mỗi năm.
+- Tìm địa điểm trên trái đất tương ứng với nhiệt độ cao nhất mỗi năm.
 
 
 
