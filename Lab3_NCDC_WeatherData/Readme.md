@@ -17,7 +17,7 @@ Bài thực hành này xử lý dữ liệu thu thập bởi [Trung tâm dữ li
 Yêu cầu: Từ tập dữ liệu thu thập được, hãy tìm nhiệt độ cao nhất của mỗi năm.
 
 <p align="center">
-<img src="figs/ncdc_data_sample.png" width="70%"/>
+<img src="figs/ncdc_data_sample.PNG" width="70%"/>
 <center>
     <caption>Minh họa một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi nằm trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách). 
     </caption>
@@ -134,7 +134,7 @@ ax.bar(years,temps)
 plt.show()
 ```
 
-<img src="figs/output_visualization.png>
+<img src="figs/output_visualization.png"/>
 
 
 ## Bài tập <a name="excercises"/>
