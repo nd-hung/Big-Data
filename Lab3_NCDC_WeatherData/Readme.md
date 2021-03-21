@@ -134,7 +134,11 @@ ax.bar(years,temps)
 plt.show()
 ```
 
+<<<<<<< HEAD
 <img src="figs/output_visualization.png"/>
+=======
+<img src="figs/output_visualization.png" />
+>>>>>>> 63180919ed7b0141b17000563fe9999d60d6ebf3
 
 
 ## Bài tập <a name="excercises"/>
