@@ -119,6 +119,7 @@ Copy file kết quả từ HDFS sang ổ đĩa cục bộ:
 hdfs dfs -copyToLocal /user/hdoop/data/lab3/ncdc-output/part-00000 .
 ```
 
+#### Vẽ biểu đồ hiển thị kết quả
 
 ```python
 import pandas as pd 
