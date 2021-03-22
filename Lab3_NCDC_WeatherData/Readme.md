@@ -19,7 +19,7 @@ Yêu cầu: Từ tập dữ liệu thu thập được, hãy tìm nhiệt độ 
 <p align="center">
 <img src="figs/ncdc_data_sample.PNG" width="70%"/>
 <center>
-    <caption>Minh họa một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi nằm trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách). 
+    <caption>Minh họa một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi lưu trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách). 
     </caption>
     <em>
         Nguồn: Tom White, Hadoop: The definitive Guide, 4th Ed.
