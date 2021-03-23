@@ -90,7 +90,7 @@ Hệ thống hiện thông báo:
 > Are you sure you want to continue connecting (yes/no)?
 
 Nhập "yes".
-<img src='figs/set_ssh_to_hdoop_user.PNG'>
+<img src="figs/set_ssh_to_hdoop_user.PNG" width="60%"/>
 
 #### Cài đặt Java
 
@@ -293,12 +293,12 @@ stop-all.sh
 ```
 http://localhost:9870
 ```
-<img src="figs/hadoop_ui.png">
+<img src="figs/hadoop_ui.png" width="60%"/>
 
 
 #### Truy cập YARN:
 ```
 http://localhost:8088
 ```
-<img src="figs/yarn_ui.png">
+<img src="figs/yarn_ui.png" width="60%">
 
