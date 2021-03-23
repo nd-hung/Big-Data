@@ -171,22 +171,22 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ```
 ----
 **Lưu ý:**
-Để biết đường dẫn đến cài đặt Java, dùng các lệnh sau:
+Để biết đường dẫn đến cài đặt Java, dùng lệnh sau:
 ```shell
 which javac
 ```
-để biết đường dẫn đến thư mục chứa các file thực thi Java. Chẳng hạn:
+được kết quả có dạng:
 ```shell
 /usr/bin/javac
 ```
-Sau đó, sử dụng đường dẫn trên để xác định đường dẫn đến thư mục OpenJDK:
+Sử dụng đường dẫn trên để xác định thư mục OpenJDK:
 ```shell
 readlink -f /usr/bin/javac
 ```
 ----
 #### Thiết lập cấu hình Hadoop core
 
-Để thiết lập Hadoop chế độ giả lập phân tán (pseudo-distributed mode), cần xác định URL đến máy chủ chính (NamNode) và thư mục để Hadoop sử dụng cho tiến trình map và reduce.
+Để thiết lập Hadoop chế độ giả lập phân tán (pseudo-distributed mode), cần xác định URL đến máy chủ chính (NameNode) và thư mục để Hadoop sử dụng cho tiến trình map và reduce.
 
 Mở file `core-site.xml`:
 ```shell
