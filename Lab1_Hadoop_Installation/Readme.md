@@ -293,12 +293,12 @@ stop-all.sh
 ```
 http://localhost:9870
 ```
-<img src="figs/hadoop_ui.png" width="60%"/>
+<img src="figs/hadoop_ui.png">
 
 
 #### Truy cập YARN:
 ```
 http://localhost:8088
 ```
-<img src="figs/yarn_ui.png" width="60%">
+<img src="figs/yarn_ui.png">
 
