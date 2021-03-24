@@ -13,6 +13,7 @@
     * [Khởi động Hadoop](#start_hadoop)
     * [Chuẩn bị dữ liệu](#data_preparation)
     * [Chạy ứng dụng MapReduce](#run_mapreduce_job)
+    * [Một số lỗi thường gặp](#common_issues)
 - [Bài tập](#excercises)
 
 
@@ -227,6 +228,29 @@ hdfs dfs -cat /user/hdoop/data/gutenberg-output/part-00000
 ```
 Hoặc xem qua Hadoop UI:
 <img src="figs/hdfs_browse_result_ui.png"/>
+
+### Một số lỗi thường gặp <a name="common_issues"/>
+- Connection refused
+Nguyên nhân thường gặp của lỗi này là Hadoop không hoạt động. 
+
+Cách khắc phục:
+
+1. Dừng Hadoop:
+```shell
+stop-all.sh
+```
+
+2. Định dạng lại HDFS:
+
+```shell
+hadoop namenode -format
+```
+
+3. Khởi động lại Hadoop:
+
+```shell
+start-all.sh
+```
 
 ## Bài tập <a name="excercises"/>
 
