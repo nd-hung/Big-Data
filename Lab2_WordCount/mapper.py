@@ -3,17 +3,15 @@
 
 import sys
 
-# input comes from STDIN (standard input)
+# Chương trình Python chạy trên Hadoop MapReduce qua tính năng Streaming.
+# Dữ liệu vào từ thiết bị nhập chuẩn (STDIN)
+# Kết quả xử lý gửi ra thiết bị xuất chuẩn (STDOUT)
+
 for line in sys.stdin.buffer.raw:
-    # remove leading and trailing whitespace
+    # loại bỏ ký tự trắng ở đầu và cuối chuỗi
     line = line.strip()
-    # split the line into words
+    # tách ra thành các từ
     words = line.split()
-    # increase counters
+    # đưa ra thiết bị xuất chuẩn các cặp <word, 1>, cách nhau bằng ký tự tab
     for word in words:
-        # write the results to STDOUT (standard output);
-        # what we output here will be the input for the
-        # Reduce step, i.e. the input for reducer.py
-        #
-        # tab-delimited; the trivial word count is 1
         print('%s\t%s' % (word, 1))
