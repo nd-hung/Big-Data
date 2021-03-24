@@ -230,7 +230,8 @@ Hoặc xem qua Hadoop UI:
 <img src="figs/hdfs_browse_result_ui.png"/>
 
 ### Một số lỗi thường gặp <a name="common_issues"/>
-- Connection refused
+- Java exception: Connection refused
+
 Nguyên nhân thường gặp của lỗi này là Hadoop không hoạt động. 
 
 Cách khắc phục:
