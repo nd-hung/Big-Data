@@ -13,7 +13,7 @@ for line in sys.stdin:
     # loại bỏ ký tự trắng ở đầu và cuối chuỗi
     line = line.strip()
 
-    # tách ra thành cặp <word, 1> (Chú ý: Ở file reduce.py cặp <word, 1> xuất ra với ký tự phân cách tab)
+    # tách ra thành cặp <word, 1> (Chú ý: Ở file reducer.py cặp <word, 1> xuất ra với ký tự phân cách tab)
     word, count = line.split('\t', 1)
 
     # chuyển giá trị count thành kiểu số
