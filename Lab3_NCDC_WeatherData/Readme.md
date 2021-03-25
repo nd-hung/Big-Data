@@ -157,7 +157,7 @@ Từ dữ liệu NCDC đã cho, thực hiện các xử lý sau:
 - Tính nhiệt độ trung bình của mỗi năm.
 - Tìm thời gian (ngày, giờ), tọa độ (latitude, longtitude) tương ứng với nhiệt độ cao nhất mỗi năm. 
 <br>
-Hướng dẫn: cho ```python s ``` là một dòng dữ liệu, tọa độ được tính như sau:
+Hướng dẫn: cho s là một dòng dữ liệu, tọa độ được tính như sau:
 
 ```python 
 (lat, long) = (int(s[28:34])/1000,int(s[34:41])/1000)
