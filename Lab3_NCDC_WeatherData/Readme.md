@@ -14,9 +14,9 @@
 ## Giới thiệu <a name="intro"/>
 
 Bài thực hành này xử lý dữ liệu thu thập bởi [Trung tâm dữ liệu thời tiết Hoa Kỳ](https://www.ncdc.noaa.gov/) (NCDC). Dữ liệu được thu nhận từ các trạm quan trắc được đặt ở nhiều nơi, cung cấp các số đo về khí tượng, bao gồm: ngày, giờ, tọa độ, độ cao, nhiệt độ, áp suất không khí, hướng gió. <br>
-[Code download dữ liệu đầy đủ](https://github.com/nd-hung/Big-Data/blob/main/Lab3_NCDC_WeatherData/Collect_Data.ipynb) 
+[Code download dữ liệu đầy đủ](https://github.com/nd-hung/Big-Data/blob/main/Lab3_NCDC_WeatherData/Collect_Data.ipynb) <br>
 [Code tiền xử lý dữ liệu](https://github.com/nd-hung/Big-Data/blob/main/Lab3_NCDC_WeatherData/Preprocess_Data.ipynb)
- 
+
 **Yêu cầu**: Từ tập dữ liệu thu thập được, hãy tìm nhiệt độ cao nhất của mỗi năm.
 
 <p align="center">
