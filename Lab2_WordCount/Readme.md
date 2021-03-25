@@ -269,14 +269,14 @@ Mỗi dòng file văn bản có dạng:
 ```
 cho biết người dùng với `user_id1` theo dõi người dùng `user_id2`. Nếu `user_id2` cũng theo dõi `user_id1` thì cặp tài khoản này được gọi là theo dõi lẫn nhau (mutual followers).
 
-Yêu cầu: Vận dụng cả 2 phương pháp (1) truyền thống và (2) dữ liệu lớn giải quyết các xử lý sau:
+Yêu cầu: Vận dụng cả 2 phương pháp (1) truyền thống và (2) dữ liệu lớn thực hiện các xử lý sau:
 - Thống kê số lượng người theo dõi (followers) của mỗi tài khoản người dùng.
 - Liệt kê top 5 người dùng có nhiều theo dõi nhất.
 - Liệt kê tất cả các cặp người dùng theo dõi lẫn nhau trong file dữ liệu được cho. 
 
 ### Bài 3: Xử lý dữ liệu Twitter
 Cho file văn bản `data/elonmusk_tweets.csv` chứa các dòng tweets của [Elon Musk](https://en.wikipedia.org/wiki/Elon_Musk) từ 2011-2017.
-Dữ liệu được chia sẻ bởi [Adam Helsinger](https://data.world/adamhelsingerhttps://data.world/adamhelsinger/elon-musk-tweets-until-4-6-17).
+Dữ liệu được chia sẻ bởi [Adam Helsinger](https://data.world/adamhelsinger/elon-musk-tweets-until-4-6-17).
 Từ file dữ liệu trên, hãy thực hiện các xử lý sau:
 - Liệt kê top 20 từ được nhắc đến nhiều nhất.
 - Liệt kê top 10 tài khoản được nhắc đến nhiều nhất.
