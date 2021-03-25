@@ -122,7 +122,7 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar \
 hdfs dfs -ls /user/hdoop/data/lab3/ncdc-output 
 ```
 
-Copy file kết quả từ HDFS xuống máy ổ đĩa cục bộ:
+Copy kết quả xử lý từ HDFS xuống ổ đĩa cục bộ:
 ```shell
 hdfs dfs -copyToLocal /user/hdoop/data/lab3/ncdc-output/part-00000 .
 ```
