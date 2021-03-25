@@ -152,7 +152,7 @@ plt.show()
 ## Bài tập <a name="excercises"/>
 
 
-Từ dữ liệu NCDC đã cho, thực hiện các xử lý sau:
+Từ dữ liệu NCDC đã cho, thực hiện các yêu cầu sau:
 - Tìm nhiệt độ thấp nhất của mỗi năm.
 - Tính nhiệt độ trung bình của mỗi năm.
 - Tìm thời gian (ngày, giờ), tọa độ (latitude, longtitude) tương ứng với nhiệt độ cao nhất mỗi năm. 
@@ -173,7 +173,7 @@ Cài đặt `reverse_geocoder`:
 ```shell
 pip install reverse_geocoder
 ```
-Sau đó lấy địa danh dựa theo đoạn code sau đây (chương trình minh họa chỉ xử lý 1 dòng dữ liệu):
+Sau đó lấy địa danh dựa theo đoạn code sau:
 
 
 ```python
@@ -187,6 +187,7 @@ def Geocode2Location(coordinates):
     return location
 
 f = open('data/preprocessed/1901.txt', 'r')
+# Chương trình minh họa chỉ xử lý 1 dòng dữ liệu
 line = f.readline()
 
 lat = int(line[28:34])/1000
