@@ -178,7 +178,6 @@ Sau đó lấy địa danh dựa theo đoạn code sau đây (chương trình mi
 
 ```python
 # Find location given (lat, long)
-# Coded by Hung Nguyen @ Nha Trang University
 
 import reverse_geocoder as rg
 import pprint
