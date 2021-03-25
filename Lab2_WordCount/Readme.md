@@ -99,7 +99,7 @@ Chương trình reducer xử lý các cặp <key, value> và rút gọn chúng t
 Ví dụ, để đếm số lần xuất hiện của mỗi từ, chương trình reducer sẽ cộng giá trị của tất cả các cặp <word, 1> trùng nhau.
 
 <p align="center">
-<img src="figs/MapReduce.png" />
+<img src="figs/MapReduce.png" width="70%"/>
 <center><caption>Minh họa giải quyết bài toán đếm từ với MapReduce</caption></center>
 </p>
 
@@ -167,8 +167,6 @@ for line in sys.stdin:
 if current_word == word:
     print('%s\t%s' % (current_word, current_count))
 ```
-
-    None	0
     
 
 ## Chạy ứng dụng Hadoop MapReduce
