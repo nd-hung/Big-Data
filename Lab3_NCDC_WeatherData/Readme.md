@@ -143,7 +143,7 @@ plt.show()
 ```
 
 
-    <Figure size 640x480 with 1 Axes>
+<img src="figs/output_visualization.png" />
 
 
 ## Bài tập <a name="excercises"/>
