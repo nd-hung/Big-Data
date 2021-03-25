@@ -13,13 +13,13 @@
 
 ## Giới thiệu <a name="intro"/>
 
-Bài thực hành này xử lý dữ liệu thu thập bởi [Trung tâm dữ liệu thời tiết Hoa Kỳ](https://www.ncdc.noaa.gov/) (NCDC). Dữ liệu được thu nhận từ các trạm quan trắc được đặt ở nhiều nơi, cung cấp các số đo về thời gian, tọa độ, nhiệt độ, áp suất không khí, hướng gió. <br>
-Yêu cầu: Từ tập dữ liệu thu thập được, hãy tìm nhiệt độ cao nhất của mỗi năm.
+Bài thực hành này xử lý dữ liệu thu thập bởi [Trung tâm dữ liệu thời tiết Hoa Kỳ](https://www.ncdc.noaa.gov/) (NCDC). Dữ liệu được thu nhận từ các trạm quan trắc được đặt ở nhiều nơi, cung cấp các số đo về khí tượng, bao gồm: ngày, giờ, tọa độ, độ cao, nhiệt độ, áp suất không khí, hướng gió <br>
+**Yêu cầu**: Từ tập dữ liệu thu thập được, hãy tìm nhiệt độ cao nhất của mỗi năm.
 
 <p align="center">
-<img src="figs/ncdc_data_sample.PNG" width="70%"/>
+<img src="figs/ncdc_data_sample.png" width="70%"/>
 <center>
-    <caption>Minh họa một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi lưu trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách). 
+    <caption>Minh họa một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi nằm trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách). 
     </caption>
     <em>
         Nguồn: Tom White, Hadoop: The definitive Guide, 4th Ed.
@@ -30,10 +30,10 @@ Yêu cầu: Từ tập dữ liệu thu thập được, hãy tìm nhiệt độ 
 ## Chương trình MapReduce  <a name = "mapreduceprogram"/>
 
 ### Map
+MapReduce xem dữ liệu vào dưới dạng các cặp <k1,v1>. Trong trường hợp này `k1` là thứ tự dòng văn bản, `v1` là chuỗi ký tự chứa 1 bản ghi dữ liệu thời tiết.
+Chương trình `mapper` đọc từng dòng ký tự từ stdin, lấy ra các giá trị: năm, nhiệt độ và đưa ra stdout dưới dạng <k2,v2> = <year,temperature>.
+Các cặp <k2,v2> sẽ được gộp theo `k2`, tức theo năm, trước khi gửi đến pha Reduce.
 
-MapReduce xem dữ liệu vào dưới dạng các cặp <k1,v1>. Trong trường hợp này <k1> là thứ tự dòng văn bản, <v1> là chuỗi ký tự chứa 1 bản ghi dữ liệu thời tiết.
-Chương trình `mapper` đọc từng dòng ký tự từ stdin, lấy ra các giá trị: năm, nhiệt độ và đưa ra stdout dưới dạng <k2,v2> = <year,temp>.
-Các cặp <k2,v2> sẽ được gộp theo <k2>, tức theo năm, trước khi gửi đến pha Reduce.
 
 ```python
 #!/usr/bin/python3
@@ -42,17 +42,19 @@ Các cặp <k2,v2> sẽ được gộp theo <k2>, tức theo năm, trước khi 
 import re
 import sys
 
+# <k1, v1> = <line, text>
 for line in sys.stdin:
   val = line.strip()
   (year, temp, q) = (val[15:19], val[87:92], val[92:93])
   # Nhiệt đô == "+9999" -> không có dữ liệu
   # q (quality code) == "01459" -> dữ liệu không bị lỗi
   if (temp != "+9999" and re.match("[01459]", q)):
-    print("%s\t%s" % (year, temp))
+    print("%s\t%s" % (year, temp)) # <k2, v2> = <year, temperature>
 ```
 
 ### Reduce
-Chương trình reducer đọc từng dòng từ stdin, lấy ra từng cặp <k2, v2>. Với mỗi giá trị của <k2>, chương trình sẽ tìm giá trị lớn nhất của <v2> và đưa ra stdout.
+Chương trình reducer đọc từng dòng từ `stdin`, lấy ra từng cặp <k2, v2>. Với mỗi giá trị của `k2`, chương trình sẽ tìm giá trị lớn nhất của `v2` và đưa ra `stdout`.
+
 
 ```python
 #!/usr/bin/python3
@@ -103,7 +105,7 @@ Giả sử 2 file `mapper.py` và `reducer.py` lưu ở thư mục `/home/hdoop/
 ```shel
 cd /home/hdoop/labs/lab3
 ```
-- Gọi chương trình MapReduce thông qua Hadoop Streaming:
+- Chạy ứng dụng MapReduce thông qua Hadoop Streaming:
 ```shell
 hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar \
  -file mapper.py -mapper mapper.py \
@@ -117,12 +119,13 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar \
 hdfs dfs -ls /user/hdoop/data/lab3/ncdc-output 
 ```
 
-Copy file kết quả từ HDFS sang ổ đĩa cục bộ:
+Copy file kết quả từ HDFS xuống máy ổ đĩa cục bộ:
 ```shell
 hdfs dfs -copyToLocal /user/hdoop/data/lab3/ncdc-output/part-00000 .
 ```
 
-#### Vẽ biểu đồ hiển thị kết quả
+### Vẽ biểu đồ kết quả xử lý
+
 
 ```python
 import pandas as pd 
@@ -139,14 +142,74 @@ plt.ylabel('Nhiệt độ ($^\circ$C)')
 plt.show()
 ```
 
-<img src="figs/output_visualization.png"/>
+
+    <Figure size 640x480 with 1 Axes>
+
 
 ## Bài tập <a name="excercises"/>
 
 
-Thực hiện các xử lý sau trên tập dữ liệu NCDC:
-- Tìm thời gian, tọa độ của nơi có nhiệt độ cao nhất mỗi năm.
-- Tìm tên địa điểm tương ứng với nhiệt độ cao nhất mỗi năm.
+Từ dữ liệu NCDC đã cho, thực hiện các xử lý sau:
+- Tìm nhiệt độ thấp nhất của mỗi năm.
+- Tính nhiệt độ trung bình của mỗi năm.
+- Tìm thời gian, tọa độ (latitude, longtitude) tương ứng với nhiệt độ cao nhất mỗi năm. 
+<br>
+Hướng dẫn: cho `s` là một dòng dữ liệu, tọa độ được tính như sau:
+
+```python 
+(lat, long) = (int(s[28:34])/1000,int(s[34:41])/1000)
+```
+
+- Tìm tên địa điểm trên trái đất tương ứng với tọa độ nóng nhất mỗi năm.
+<br>
+
+Hướng dẫn:
+Có thể sử dụng gói `reverse_geocoder` để lấy địa danh từ tọa độ.
+
+Cài đặt `reverse_geocoder`:
+```shell
+pip install reverse_geocoder
+```
+Sau đó lấy địa danh dựa theo đoạn code sau đây:
 
 
+```python
+# Find location name given (lat, long)
+# Coded by Hung Nguyen @ Nha Trang University
 
+import reverse_geocoder as rg
+import pprint
+  
+def Geocode2Location(coordinates):
+    location = rg.search(coordinates)
+    return location
+
+f = open('data/preprocessed/1901.txt', 'r')
+line = f.readline()
+
+lat = int(line[28:34])/1000
+long = int(line[34:41])/1000
+
+geoCode = (lat, long)
+result = Geocode2Location(geoCode) 
+
+# use prettry printer to display result
+pprint.pprint(result)
+
+print("\nĐịa điểm quan trắc: ", result[0]['name'] + ', ' + result[0]['cc'])
+```
+
+    [OrderedDict([('lat', '64.02472'),
+                  ('lon', '23.50482'),
+                  ('name', 'Lohtaja'),
+                  ('admin1', 'Central Ostrobothnia'),
+                  ('admin2', 'Kokkola'),
+                  ('cc', 'FI')])]
+    
+    Địa điểm quan trắc:  Lohtaja, FI
+    
+
+
+```python
+
+```
