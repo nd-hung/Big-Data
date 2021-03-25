@@ -160,7 +160,7 @@ Hướng dẫn: cho `s` là một dòng dữ liệu, tọa độ được tính 
 (lat, long) = (int(s[28:34])/1000,int(s[34:41])/1000)
 ```
 
-- Tìm tên địa điểm trên trái đất tương ứng với tọa độ nóng nhất mỗi năm.
+- Tìm địa danh tương ứng với nhiệt độ cao nhất mỗi năm.
 <br>
 
 Hướng dẫn:
@@ -170,7 +170,7 @@ Cài đặt `reverse_geocoder`:
 ```shell
 pip install reverse_geocoder
 ```
-Sau đó lấy địa danh dựa theo đoạn code sau đây:
+Sau đó lấy địa danh dựa theo đoạn code sau đây (chương trình minh họa chỉ xử lý 1 dòng dữ liệu):
 
 
 ```python
