@@ -191,20 +191,20 @@ lat = int(line[28:34])/1000
 long = int(line[34:41])/1000
 
 geoCode = (lat, long)
-result = Geocode2Location(geoCode) 
+result = Geocode2Location(geoCode)[0]
 
 # Use prettry printer to display result
 pprint.pprint(result)
 
-print("\nĐịa điểm quan trắc: ", result[0]['name'] + ', ' + result[0]['cc'])
+print("\nĐịa điểm quan trắc: ", result['name'] + ', ' + result['cc'])
 ```
 
-    [OrderedDict([('lat', '64.02472'),
+    OrderedDict([('lat', '64.02472'),
                   ('lon', '23.50482'),
                   ('name', 'Lohtaja'),
                   ('admin1', 'Central Ostrobothnia'),
                   ('admin2', 'Kokkola'),
-                  ('cc', 'FI')])]
+                  ('cc', 'FI')])
     
     Địa điểm quan trắc:  Lohtaja, FI
     
