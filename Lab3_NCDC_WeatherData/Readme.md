@@ -191,12 +191,12 @@ f = open('data/preprocessed/1901.txt', 'r')
 line = f.readline()
 
 lat = int(line[28:34])/1000
-long = int(line[34:41])/1000
+lon = int(line[34:41])/1000
 
-geoCode = (lat, long)
+geoCode = (lat, lon)
 result = Geocode2Location(geoCode)[0]
 
-# Use prettry printer to display result
+# Use pretty printer to display result
 pprint.pprint(result)
 
 print("\nĐịa điểm quan trắc: ", result['name'] + ', ' + result['cc'])
