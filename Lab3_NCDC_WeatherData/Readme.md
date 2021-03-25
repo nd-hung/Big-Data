@@ -14,12 +14,15 @@
 ## Giới thiệu <a name="intro"/>
 
 Bài thực hành này xử lý dữ liệu thu thập bởi [Trung tâm dữ liệu thời tiết Hoa Kỳ](https://www.ncdc.noaa.gov/) (NCDC). Dữ liệu được thu nhận từ các trạm quan trắc được đặt ở nhiều nơi, cung cấp các số đo về khí tượng, bao gồm: ngày, giờ, tọa độ, độ cao, nhiệt độ, áp suất không khí, hướng gió. <br>
+[Code download dữ liệu đầy đủ](https://github.com/nd-hung/Big-Data/blob/main/Lab3_NCDC_WeatherData/Collect_Data.ipynb) 
+[Code tiền xử lý dữ liệu](https://github.com/nd-hung/Big-Data/blob/main/Lab3_NCDC_WeatherData/Preprocess_Data.ipynb)
+ 
 **Yêu cầu**: Từ tập dữ liệu thu thập được, hãy tìm nhiệt độ cao nhất của mỗi năm.
 
 <p align="center">
 <img src="figs/ncdc_data_sample.PNG" width="70%"/>
 <center>
-    <caption>Minh họa một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi nằm trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách). 
+    <caption>Diễn giải một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi nằm trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách). 
     </caption>
     <em>
         Nguồn: Tom White, Hadoop: The definitive Guide, 4th Ed.
