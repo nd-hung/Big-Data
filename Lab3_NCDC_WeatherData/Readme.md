@@ -174,7 +174,7 @@ Sau đó lấy địa danh dựa theo đoạn code sau đây:
 
 
 ```python
-# Find location name given (lat, long)
+# Find location given (lat, long)
 # Coded by Hung Nguyen @ Nha Trang University
 
 import reverse_geocoder as rg
@@ -193,7 +193,7 @@ long = int(line[34:41])/1000
 geoCode = (lat, long)
 result = Geocode2Location(geoCode) 
 
-# use prettry printer to display result
+# Use prettry printer to display result
 pprint.pprint(result)
 
 print("\nĐịa điểm quan trắc: ", result[0]['name'] + ', ' + result[0]['cc'])
