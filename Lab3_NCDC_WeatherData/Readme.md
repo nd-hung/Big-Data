@@ -156,10 +156,10 @@ Từ dữ liệu NCDC đã cho, thực hiện các yêu cầu sau:
 - Tìm nhiệt độ thấp nhất của mỗi năm.
 - Tính nhiệt độ trung bình của mỗi năm.
 - Tìm thời gian (ngày, giờ), tọa độ (latitude, longtitude) tương ứng với nhiệt độ cao nhất mỗi năm. <br>
-Hướng dẫn: cho s là một dòng dữ liệu, tọa độ được tính như sau:
+Hướng dẫn: Cho s là một dòng dữ liệu NCDC, tọa độ được tính như sau bằng Python:
 
 ```python 
-(lat, long) = (int(s[28:34])/1000,int(s[34:41])/1000)
+(latitude, longitude) = (int(s[28:34])/1000,int(s[34:41])/1000)
 ```
 
 - Tìm địa danh tương ứng với nhiệt độ cao nhất mỗi năm.<br>
