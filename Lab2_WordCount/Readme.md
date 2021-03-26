@@ -129,7 +129,6 @@ for line in sys.stdin.buffer.raw:
 #!/usr/bin/python3
 """reducer.py"""
 
-from operator import itemgetter
 import sys
 
 current_word = None
