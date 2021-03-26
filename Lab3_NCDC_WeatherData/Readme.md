@@ -155,21 +155,18 @@ plt.show()
 Từ dữ liệu NCDC đã cho, thực hiện các yêu cầu sau:
 - Tìm nhiệt độ thấp nhất của mỗi năm.
 - Tính nhiệt độ trung bình của mỗi năm.
-- Tìm thời gian (ngày, giờ), tọa độ (latitude, longtitude) tương ứng với nhiệt độ cao nhất mỗi năm. 
-<br>
+- Tìm thời gian (ngày, giờ), tọa độ (latitude, longtitude) tương ứng với nhiệt độ cao nhất mỗi năm. <br>
 Hướng dẫn: cho s là một dòng dữ liệu, tọa độ được tính như sau:
 
 ```python 
 (lat, long) = (int(s[28:34])/1000,int(s[34:41])/1000)
 ```
 
-- Tìm địa danh tương ứng với nhiệt độ cao nhất mỗi năm.
-<br>
-
+- Tìm địa danh tương ứng với nhiệt độ cao nhất mỗi năm.<br>
 Hướng dẫn:
-Có thể sử dụng gói `reverse_geocoder` để lấy địa danh từ tọa độ.
+Có thể sử dụng package `reverse_geocoder` để lấy địa danh từ tọa độ.
 
-Cài đặt `reverse_geocoder`:
+Cài đặt package `reverse_geocoder`:
 ```shell
 pip install reverse_geocoder
 ```
@@ -187,7 +184,7 @@ def Geocode2Location(coordinates):
     return location
 
 f = open('data/preprocessed/1901.txt', 'r')
-# Chương trình minh họa chỉ xử lý 1 dòng dữ liệu
+# Minh họa với 1 dòng dữ liệu
 line = f.readline()
 
 lat = int(line[28:34])/1000
