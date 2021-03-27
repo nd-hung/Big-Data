@@ -155,6 +155,41 @@ plt.show()
 Từ dữ liệu NCDC đã cho, thực hiện các yêu cầu sau:
 - Tìm nhiệt độ thấp nhất của mỗi năm.
 - Tính nhiệt độ trung bình của mỗi năm.
+
+Hướng dẫn: Đoạn code Python sau đọc file dữ liệu mẫu `data/sample_input.txt`, tính và in ra nhiệt độ trung bình theo năm. Dựa theo code này hãy viết chương trình ở pha Reduce để tạo ứng dụng MapReduce tính nhiệt độ trung bình.
+
+```python
+f = open('data/sample_input.txt', 'r')
+
+(last_year, last_temperature) = (None, None)
+
+count = 0
+total = 0
+
+for line in f.readlines():
+    current_year, current_temperature = line.strip().split()
+    if (last_year != None) and (last_year != current_year):
+      # Nhiệt độ trung bình được làm tròn đến 1 chữ số phần thập phân và nhân 10
+        print('%s\t%s' % (last_year, int(round(total / count, 1) * 10)))
+        (last_year, last_temperature) = (current_year, int(current_temperature))
+        total = last_temperature
+        count = 1
+    else:
+        (last_year, last_temperature) = (current_year, int(current_temperature))
+        total += int(current_temperature)
+        count += 1
+if last_year:
+    print('%s\t%s' % (last_year, int(round(total / count, 1) * 10)))
+    
+```
+    1901	345
+    1902	310
+    1903	362
+    1904	347
+    1905	329
+    
+
+
 - Tìm thời gian (ngày, giờ), tọa độ (latitude, longtitude) tương ứng với nhiệt độ cao nhất mỗi năm. <br>
 Hướng dẫn: Cho s là một dòng dữ liệu NCDC, tọa độ được tính như sau bằng Python:
 
