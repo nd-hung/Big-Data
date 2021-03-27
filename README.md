@@ -1,11 +1,13 @@
-# Bài thực hành Xử lý dữ liệu lớn 
+<h1>
+Bài thực hành Xử lý dữ liệu lớn 
+</h1>
+
 <h2> 
-GV: Nguyễn Đình Hưng 
+Nguyễn Đình Hưng 
 <br>
-Khoa CNTT, Trường ĐH Nha Trang
+Khoa Công nghệ thông tin, Trường đại học Nha Trang
 </h2>
 
 ## [Lab 1: Hadoop Installation](https://github.com/nd-hung/Big-Data/tree/main/Lab1_Hadoop_Installation)
 ## [Lab 2: Hello Big Data](https://github.com/nd-hung/Big-Data/tree/main/Lab2_WordCount)
 ## [Lab 3: NCDC Weather Data Analysis](https://github.com/nd-hung/Big-Data/tree/main/Lab3_NCDC_WeatherData)
-

@@ -35,7 +35,7 @@ Bài thực hành này xử lý dữ liệu thu thập bởi [Trung tâm dữ li
 ### Map
 MapReduce xem dữ liệu vào dưới dạng các cặp <k1,v1>. Trong trường hợp này `k1` là thứ tự dòng văn bản, `v1` là chuỗi ký tự chứa 1 bản ghi dữ liệu thời tiết.
 Chương trình `mapper` đọc từng dòng ký tự từ stdin, lấy ra các giá trị: năm, nhiệt độ và đưa ra stdout dưới dạng <k2,v2> = <year,temperature>.
-Các cặp <k2,v2> sẽ được gộp theo `k2`, tức theo năm, trước khi gửi đến pha Reduce.
+Các cặp <k2,v2> sẽ được gộp theo `k2` - tức theo năm - trước khi gửi đến pha Reduce.
 
 
 ```python
@@ -56,7 +56,7 @@ for line in sys.stdin:
 ```
 
 ### Reduce
-Chương trình reducer đọc từng dòng từ `stdin`, lấy ra từng cặp <k2, v2>. Với mỗi giá trị của `k2`, chương trình sẽ tìm giá trị lớn nhất của `v2` và đưa ra `stdout`.
+Chương trình reducer đọc từng dòng từ `stdin`, lấy ra từng cặp <k2, v2> = <year, temperature>. Với mỗi giá trị của `k2`, chương trình sẽ tìm giá trị lớn nhất của `v2` và đưa ra `stdout`.
 
 
 ```python
