@@ -135,7 +135,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Đọc dữ liệu kết quả
-max_temps = pd.read_csv('Output/part-00000', delimiter='\t', header=None, names=['year', 'temp'])
+max_temps = pd.read_csv('output/part-00000', delimiter='\t', header=None, names=['year', 'temp'])
 # Vẽ biểu đồ 
 plt.plot(max_temps['year'], max_temps['temp'] /10, marker="o")
 plt.title('Nhiệt độ cao nhất ghi nhận được theo từng năm ')
