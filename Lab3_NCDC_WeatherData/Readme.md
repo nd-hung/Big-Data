@@ -162,27 +162,28 @@ Hướng dẫn:  Cho file dữ liệu mẫu `data/sample_input.txt` chứa các 
 ```python
 f = open('data/sample_input.txt', 'r')
 
-(last_year, last_temperature) = (None, None)
+(current_year, current_temp) = (None, None)
 
 count = 0
 total = 0
 
 for line in f.readlines():
-    current_year, current_temperature = line.strip().split('\t')
-    if (last_year != None) and (last_year != current_year):
+    year, temp = line.strip().split('\t')
+    if (current_year != None) and (current_year != year):
         # Nhiệt độ trung bình được làm tròn đến 1 chữ số phần thập phân và nhân 10
-        print('%s\t%s' % (last_year, int(round(total / count, 1) * 10)))
-        (last_year, last_temperature) = (current_year, int(current_temperature))
-        total = last_temperature
+        print('%s\t%s' % (current_year, int(round(total / count, 1) * 10)))
+        (current_year, current_temp) = (year, int(temp))
+        total = current_temp
         count = 1
     else:
-        (last_year, last_temperature) = (current_year, int(current_temperature))
-        total += int(current_temperature)
+        (current_year, current_temp) = (year, int(temp))
+        total += int(temp)
         count += 1
-if last_year:
-    print('%s\t%s' % (last_year, int(round(total / count, 1) * 10)))
-    
+        
+if current_year:
+    print('%s\t%s' % (current_year, int(round(total / count, 1) * 10)))
 ```
+
     1901	345
     1902	310
     1903	362
