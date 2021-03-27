@@ -169,7 +169,7 @@ total = 0
 for line in f.readlines():
     current_year, current_temperature = line.strip().split('\t')
     if (last_year != None) and (last_year != current_year):
-      # Nhiệt độ trung bình được làm tròn đến 1 chữ số phần thập phân và nhân 10
+        # Nhiệt độ trung bình được làm tròn đến 1 chữ số phần thập phân và nhân 10
         print('%s\t%s' % (last_year, int(round(total / count, 1) * 10)))
         (last_year, last_temperature) = (current_year, int(current_temperature))
         total = last_temperature
