@@ -280,7 +280,7 @@ start-all.sh
 
 ```shell
 stop-dfs.sh
-stop-yarn.shs
+stop-yarn.sh
 ```
 
 hoặc dừng tất cả:
