@@ -199,13 +199,13 @@ Hướng dẫn: Cho s là một dòng dữ liệu NCDC, tọa độ được tí
 
 - Tìm địa danh tương ứng với nhiệt độ cao nhất mỗi năm.<br>
 Hướng dẫn:
-Có thể sử dụng package `reverse_geocoder` để lấy địa danh từ tọa độ.
+Có thể sử dụng package `reverse_geocoder` để tra địa danh dựa theo tọa độ.
 
 Cài đặt package `reverse_geocoder`:
 ```shell
 pip install reverse_geocoder
 ```
-Sau đó lấy địa danh dựa theo đoạn code sau:
+Sau đó tra địa danh dựa theo đoạn code sau:
 
 
 ```python
