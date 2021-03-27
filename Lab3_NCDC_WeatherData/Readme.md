@@ -177,7 +177,7 @@ for line in f.readlines():
         count = 1
     else:
         (current_year, current_temp) = (year, int(temp))
-        total += int(temp)
+        total += current_temp
         count += 1
         
 if current_year:
