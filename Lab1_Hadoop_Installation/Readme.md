@@ -23,7 +23,7 @@ Mọi tiến trình xử lý đều chạy trên một máy ảo Java (JVM) đơ
 NameNode và DataNode cùng chạy trên một máy tính.
 
 - Phân tán hoàn toàn (Fully distributed):
-Các tiến trình Hadoop (deamons) chạy trên một cụm nhiều máy tính vật lý.
+Các tiến trình Hadoop (daemons) chạy trên một cụm nhiều máy tính vật lý.
 
 Bài thực hành này thực hiện cài đặt Hadoop chế độ giả lập phân tán trên môi trường Linux. 
 
