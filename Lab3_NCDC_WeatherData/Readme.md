@@ -157,7 +157,7 @@ Từ dữ liệu NCDC đã cho, thực hiện các yêu cầu sau:
 - Tìm nhiệt độ thấp nhất của mỗi năm.
 - Tính nhiệt độ trung bình của mỗi năm.
 
-Hướng dẫn: Đoạn code Python sau đọc file dữ liệu mẫu `data/sample_input.txt`, tính và in ra nhiệt độ trung bình theo năm. Dựa theo code này hãy viết chương trình ở pha Reduce để tạo ứng dụng MapReduce tính nhiệt độ trung bình.
+Hướng dẫn:  Cho file dữ liệu mẫu `data/sample_input.txt` chứa các dòng dạng <năm, nhiệt độ> được nhóm theo từng năm. Đoạn code Python sau đọc file, tính và in ra nhiệt độ trung bình theo năm. Dựa theo code này hãy viết chương trình ở pha Reduce để tạo ứng dụng MapReduce tính nhiệt độ trung bình từng năm trên tập dữ liệu NCDC.
 
 ```python
 f = open('data/sample_input.txt', 'r')
