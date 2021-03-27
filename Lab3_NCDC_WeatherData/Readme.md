@@ -208,7 +208,7 @@ Sau đó tra địa danh dựa theo đoạn code sau:
 
 
 ```python
-# Find location given (latitude, longitude)
+# Find location name given (latitude, longitude)
 
 import reverse_geocoder as rg
 import pprint
