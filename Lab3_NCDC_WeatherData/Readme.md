@@ -159,7 +159,7 @@ Từ dữ liệu NCDC đã cho, thực hiện các yêu cầu sau:
 Hướng dẫn: Đoạn code Python sau đọc file dữ liệu mẫu `data/sample_input.txt`, tính và in ra nhiệt độ trung bình theo năm. Dựa theo code này hãy viết chương trình ở pha Reduce để tạo ứng dụng MapReduce tính nhiệt độ trung bình.
 
 ```python
-f = open('data/sample_input.txt', 'r')
+f = open('Data/sample_input.txt', 'r')
 
 (last_year, last_temperature) = (None, None)
 
@@ -189,7 +189,6 @@ if last_year:
     1905	329
     
 
-
 - Tìm thời gian (ngày, giờ), tọa độ (latitude, longtitude) tương ứng với nhiệt độ cao nhất mỗi năm. <br>
 Hướng dẫn: Cho s là một dòng dữ liệu NCDC, tọa độ được tính như sau bằng Python:
 
@@ -209,7 +208,7 @@ Sau đó tra địa danh dựa theo đoạn code sau:
 
 
 ```python
-# Find location given (lat, long)
+# Find location given (latitude, longitude)
 
 import reverse_geocoder as rg
 import pprint
