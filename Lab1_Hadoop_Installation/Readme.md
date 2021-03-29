@@ -235,7 +235,7 @@ Bổ sung các khai báo sau:
 ```
 
 
-#### Chỉnh sửa file `hdfs-site.xml`
+#### Cấu hình HDFS
 
 Mở file `hdfs-site.xml`:
 ```shell
@@ -251,7 +251,7 @@ Bổ sung khai báo sau:
 </property>
 </configuration>
 ```
-#### Chỉnh sửa file `mapred-site.xml`:
+#### Cấu hình MapReduce
 ```shell
 sudo nano $HADOOP_HOME/etc/hadoop/mapred-site.xml
 ```
@@ -269,7 +269,7 @@ Bổ sung các thiết lập sau:
 </configuration>
 ```
 
-#### Thiết lập YARN:
+#### Thiết lập YARN
 Mở file `yarn-site.xml`:
 ```shell
 sudo nano $HADOOP_HOME/etc/hadoop/yarn-site.xml
@@ -320,14 +320,14 @@ stop-all.sh
 ```
 
 ### Truy cập Hadoop qua trình duyệt Web <a name="hadoopUI"/>
-#### Truy cập máy chủ chính (NameNode):
+#### Truy cập máy chủ chính (NameNode)
 ```
 http://localhost:9870
 ```
 <img src="figs/hadoop_ui.png">
 
 
-#### Truy cập YARN:
+#### Truy cập YARN
 ```
 http://localhost:8088
 ```
