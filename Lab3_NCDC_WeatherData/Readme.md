@@ -157,7 +157,7 @@ Từ dữ liệu NCDC đã cho, thực hiện các yêu cầu sau:
 - Tìm nhiệt độ thấp nhất của mỗi năm.
 - Tính nhiệt độ trung bình của mỗi năm.
 ### Kết quả xử lý
-<img src="figs/ncdc_output.png" />
+<img src="figs/ncdc_result.png" />
 
 ### Hiển thị dưới dạng biểu đồ
 <img src="figs/ncdc_max_min_avg_temp.png" />
