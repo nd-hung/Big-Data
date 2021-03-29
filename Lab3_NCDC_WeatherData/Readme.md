@@ -156,7 +156,7 @@ plt.show()
 Từ dữ liệu NCDC đã cho, thực hiện các yêu cầu sau:
 - Tìm nhiệt độ thấp nhất của mỗi năm.
 - Tính nhiệt độ trung bình của mỗi năm.
-### Kết quả xử lý
+### Kết quả xử lý <year, max * 10, min * 10, avg * 10>
 <img src="figs/ncdc_result.png" />
 
 ### Hiển thị dưới dạng biểu đồ
