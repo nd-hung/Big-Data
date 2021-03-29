@@ -4,7 +4,7 @@
 <h1 style="text-align:center"> Lab 1: Cài đặt Hadoop </h1>
 
 - [Giới thiệu](#intro) <br>
-- [Tạo tài khoản quản trị Hadoop](#create_hadoop_account) <br>
+- [Thiết lập môi trường](#create_env) <br>
 - [Cài đặt Hadoop](#hadoop_installation) <br>
 - [Vận hành Hadoop](#operate_hadoop) <br>
     * [Khởi động Hadoop](#start_hadoop)
@@ -35,9 +35,9 @@ Có thể cài đặt Ubuntu trên môi trường máy ảo (Virtual Box, https:
 - Hadoop 3.2.2 (https://mirror.downloadvn.com/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz)
 
 
-## Tạo tài khoản quản trị Hadoop <a name="create_hadoop_account"/>
+## Thiết lập môi trường <a name="create_env"/>
 
-### Tạo tài khoản
+### Tạo tài khoản quản trị Hadoop
 Để tăng tính bảo mật, nên tạo một tài khoản riêng để quản trị hệ thống Hadoop.
 Mở Ubuntu Terminal và nhập lệnh sau:
 ```shell
