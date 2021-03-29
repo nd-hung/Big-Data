@@ -156,9 +156,10 @@ plt.show()
 Từ dữ liệu NCDC đã cho, thực hiện các yêu cầu sau:
 - Tìm nhiệt độ thấp nhất của mỗi năm.
 - Tính nhiệt độ trung bình của mỗi năm.
-
-
+### Kết quả xử lý
 <img src="figs/ncdc_output.png" />
+
+### Hiển thị dưới dạng biểu đồ
 <img src="figs/ncdc_max_min_avg_temp.png" />
 
 Hướng dẫn:  Cho [file dữ liệu mẫu](data/sample_input.txt) chứa các dòng dạng <năm, nhiệt độ> được nhóm theo từng năm. Đoạn code Python sau đọc file, tính và in ra nhiệt độ trung bình theo năm. Dựa theo code này hãy viết chương trình ở pha Reduce để tạo ứng dụng MapReduce tính nhiệt độ trung bình từng năm trên tập dữ liệu NCDC.
