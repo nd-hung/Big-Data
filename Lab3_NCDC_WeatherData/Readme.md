@@ -50,8 +50,7 @@ import sys
 for line in sys.stdin:
   val = line.strip()
   (year, temp, q) = (val[15:19], val[87:92], val[92:93])
-  # Nhiệt đô == "+9999" -> không có dữ liệu
-  # q (quality code) == "01459" -> dữ liệu không bị lỗi
+  # Kiểm tra tính hợp lệ của dữ liệu 
   if (temp != "+9999" and re.match("[01459]", q)):
     print("%s\t%s" % (year, temp)) # <k2, v2> = <year, temperature>
 ```
@@ -66,17 +65,23 @@ Chương trình reducer đọc từng dòng từ `stdin`, lấy ra từng cặp 
 
 import sys
 
-(last_key, max_val) = (None, -sys.maxsize)
+# Khởi tạo giá trị năm, nhiệt độ
+(last_year, max_temp) = (None, -sys.maxsize)
 for line in sys.stdin:
-  (key, val) = line.strip().split("\t")
-  if last_key and last_key != key:
-    print("%s\t%s" % (last_key, max_val))
-    (last_key, max_val) = (key, int(val))
+  # Lấy cặp giá trị <k, v> = <year, temp> từ stdin
+  (year, temp) = line.strip().split("\t")
+  # Nếu năm đọc vào khác năm đang xét -> (1) đưa ra stdout năm trước đó cùng với nhiệt độ cao nhất
+  if last_year != None and last_year != year:
+    print("%s\t%s" % (last_year, max_temp))
+    # và (2) chuyển <năm, nhiệt độ> đọc vào thành <năm, nhiệt độ> đang xét:
+    (last_year, max_temp) = (year, int(temp))
   else:
-    (last_key, max_val) = (key, max(max_val, int(val)))
+    # Nếu năm đọc vào trùng với năm đang xét -> tìm nhiệt độ lớn nhất của năm đó:
+    (last_year, max_temp) = (year, max(max_temp, int(temp)))
 
-if last_key:
-  print("%s\t%s" % (last_key, max_val))
+# In ra kết quả cho năm cuối cùng:
+if last_year:
+  print("%s\t%s" % (last_year, max_temp))
 ```
 
 ## Chạy ứng dụng Hadoop MapReduce <a name="run_program"/>
