@@ -92,6 +92,22 @@ Hệ thống hiện thông báo:
 Nhập "yes".
 <img src="figs/set_ssh_to_hdoop_user.PNG" width="60%"/>
 
+#### Tắt IPv6 
+
+Một số thiết lập có thể dẫn đến liên kết Hadoop với IPv6 trên Ubuntu. Vì thế nên tắt IPv6.
+Thực hiện lệnh sau:
+```shell
+sudo nano /etc/sysctl.conf
+```
+và bổ sung các dòng sau vào cuối file:
+
+```shell
+# disable IPv6
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+```
+
 #### Cài đặt Java
 
 Hadoop 3.2.x chỉ hỗ trợ Java 8
