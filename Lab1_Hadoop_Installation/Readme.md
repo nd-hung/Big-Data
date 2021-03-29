@@ -107,6 +107,12 @@ net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
 net.ipv6.conf.lo.disable_ipv6 = 1
 ```
+Lưu lại các thay đổi với file `/etc/sysctl.conf` và khởi động lại Ubuntu.
+Kiểm tra trạng thái IPv6 bằng lệnh sau:
+```shell
+cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+```
+Nếu kết quả hiện lên là 1 có nghĩa IPv6 đã được tắt (disabled).
 
 #### Cài đặt Java
 
@@ -202,6 +208,11 @@ readlink -f /usr/bin/javac
 ----
 #### Thiết lập cấu hình Hadoop core
 
+Thiết lập thư mục tạm cho Hadoop:
+```shell
+sudo mkdir -p /app/hadoop/tmp
+sudo chown hdoop:hdoop /app/hadoop/tmp
+```
 Để thiết lập Hadoop chế độ giả lập phân tán (pseudo-distributed mode), cần xác định URL đến máy chủ chính (NameNode) và thư mục để Hadoop sử dụng cho tiến trình map và reduce.
 
 Mở file `core-site.xml`:
@@ -212,6 +223,10 @@ sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml
 Bổ sung các khai báo sau:
 ```xml
 <configuration>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/app/hadoop/tmp</value>
+    </property>
     <property>
         <name>fs.defaultFS</name>
         <value>hdfs://localhost:9000</value>
