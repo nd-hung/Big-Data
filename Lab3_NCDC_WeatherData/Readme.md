@@ -232,6 +232,7 @@ def Geocode2Location(coordinates):
     return location
 
 f = open('data/preprocessed/1901.txt', 'r')
+
 # Minh họa với 1 dòng dữ liệu
 line = f.readline()
 
