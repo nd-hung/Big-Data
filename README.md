@@ -1,5 +1,4 @@
-<h1>
-Bài thực hành Xử lý dữ liệu lớn 
+<h1>Thực hành Xử lý dữ liệu lớn 
 </h1>
 
 <h2> 
