@@ -273,9 +273,7 @@ Yêu cầu: Vận dụng cả 2 phương pháp (1) truyền thống và (2) dữ
 
 **Hướng dẫn:**
 
-Có thể biểu diễn việc theo dõi nhau của các tài khoản Twitter bằng một đồ thị có hướng (directed graph). 
-
-Gọi G = (V, E) là đồ thị biểu diễn mối quan hệ theo dõi trên Twitter, trong đó V là tập hợp các đỉnh (vertices/nodes) - mỗi đỉnh tương ứng một tài khoản người dùng, E là tập các cạnh (edges) - mỗi cạnh là một cặp *có thứ tự* đỉnh (`u`, `v`) thể hiện "`u` theo dõi `v`". 
+Có thể biểu diễn việc theo dõi nhau của các tài khoản Twitter bằng một đồ thị có hướng (directed graph). Gọi G = (V, E) là đồ thị biểu diễn mối quan hệ theo dõi trên Twitter, trong đó V là tập hợp các đỉnh (vertices/nodes) - mỗi đỉnh tương ứng một tài khoản người dùng, E là tập các cạnh (edges) - mỗi cạnh là một cặp *có thứ tự* đỉnh (`u`, `v`) thể hiện "`u` theo dõi `v`". 
 
 Đồ thị như trên có thể biểu diễn, xử lý bằng thư viện [NetworkX](https://networkx.org). Đoạn code sau đây minh họa đọc dữ liệu từ file `data/twitter_following.txt`, tạo đồ thị thể hiện mối quan hệ theo dõi, tìm và liệt kê các cặp tài khoản theo dõi lẫn nhau (mutual followers):
 
