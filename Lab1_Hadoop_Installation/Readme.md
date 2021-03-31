@@ -1,5 +1,5 @@
 <h1>
-<img style="float: left" src="figs/NTU_logo.png" width="50" height="50"> XỬ LÝ DỮ LIỆU LỚN 
+<img style="float: left" src="figs/NTU_logo.png" width="50" height="50"> <center> XỬ LÝ DỮ LIỆU LỚN </center>
 </h1>
 
 <h1 style="text-align:center"> Lab 1: Cài đặt Hadoop </h1>
