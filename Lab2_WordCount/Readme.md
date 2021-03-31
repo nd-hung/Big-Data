@@ -289,7 +289,7 @@ for line in f.readlines():
     id1, id2 = line.strip().split()
     edges.append((id1,id2))
 
-# create directed graph from edge pairs using NetworkX Library
+# create directed graph from the edge pairs using NetworkX Library
 G = nx.DiGraph(edges)
 
 # visualize the graph
