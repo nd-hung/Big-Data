@@ -305,8 +305,11 @@ plt.show()
 
 mutual_followers = []
 
+# Xét tất cả các cạnh trên đồ thị
 for u, v in G.edges():
+    # Nếu có kết nối u->v và v->u thì (u,v) là cặp theo dõi lẫn nhau
     if G.has_edge(u,v) and G.has_edge(v,u):
+        # Loại bỏ việc liệt kê 1 cặp tài khoản 2 lần
         if (v, u) not in mutual_followers:
             mutual_followers.append((u, v))
 
