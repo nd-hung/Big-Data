@@ -271,6 +271,56 @@ Yêu cầu: Vận dụng cả 2 phương pháp (1) truyền thống và (2) dữ
 - Liệt kê top 5 người dùng có nhiều theo dõi nhất.
 - Liệt kê tất cả các cặp người dùng theo dõi lẫn nhau trong file dữ liệu được cho. 
 
+**Hướng dẫn**
+Có thể biểu diễn việc theo dõi nhau của các tài khoản Twitter bằng một đồ thị có hướng (directed graph). "`a` theo dõi `b`" tương ứng với tồn tại cạnh (edge) nối từ đỉnh (node) a đến đỉnh b của đồ thị. 
+
+Có thể sử dụng thư viện [NetworkX](https://networkx.org) để biểu diễn đồ thị trên. Đoạn code sau đây minh họa đọc dữ liệu từ file `data/twitter_following.txt`, tạo đồ thị thể hiện mối quan hệ theo dõi, tìm và liệt kê các cặp tài khoản theo dõi lẫn nhau (mutual followers):
+
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
+edges = []
+
+f = open('data/twitter_following.txt', 'r')
+
+for line in f.readlines():
+    id1, id2 = line.strip().split()
+    edges.append((id1,id2))
+
+# create directed graph from edge pairs using NetworkX Library
+G = nx.DiGraph(edges)
+
+# visualize the graph
+nx.draw(G, with_labels=True, arrows=True, arrowstyle='-|>', arrow_size=3,
+        node_color='#3498DB', node_size=800, 
+        edge_color='#FF5733')
+
+plt.show()
+```
+<img src="figs/follower_graph.png" />
+
+```python
+
+mutual_followers = []
+
+for u, v in G.edges():
+    if G.has_edge(u,v) and G.has_edge(v,u):
+        if (v, u) not in mutual_followers:
+            mutual_followers.append((u, v))
+
+# List mutual follower pairs:
+print('Các cặp tài khoản theo dõi lẫn nhau:')
+for u, v in mutual_followers:
+    print(u, '<->', v)
+
+```
+
+    Các cặp tài khoản theo dõi lẫn nhau:
+    0 <-> 1
+    0 <-> 2
+    0 <-> 3
+
 ### Bài 3: Xử lý dữ liệu Twitter
 Cho file văn bản `data/elonmusk_tweets.csv` chứa các dòng tweets của [Elon Musk](https://en.wikipedia.org/wiki/Elon_Musk) từ 2011-2017.
 Dữ liệu được chia sẻ bởi [Adam Helsinger](https://data.world/adamhelsinger/elon-musk-tweets-until-4-6-17).
