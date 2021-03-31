@@ -1,4 +1,4 @@
-<h1> <center> Thực hành Xử lý dữ liệu lớn </center>
+<h1 align="center"> Thực hành Xử lý dữ liệu lớn
 </h1>
 
 <h2> 
