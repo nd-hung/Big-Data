@@ -331,5 +331,5 @@ Dữ liệu được chia sẻ bởi [Adam Helsinger](https://data.world/adamhel
 Từ file dữ liệu trên, hãy thực hiện các xử lý sau:
 - Liệt kê top 20 từ được nhắc đến nhiều nhất.
 - Liệt kê top 10 tài khoản được nhắc đến nhiều nhất.
-- Hãy xác định thời điểm trong ngày (0-24 giờ) Elon đăng bài nhiều nhất.
+- Tìm khoảng thời gian trong ngày (0-24 giờ) tác giả đăng bài nhiều nhất.
 
