@@ -92,7 +92,7 @@ Mô hình MapReduce chia tác vụ xử lý thành 2 pha: map và reduce. Với 
 Khi bắt đầu xử lý, dữ liệu vào sẽ được chia nhỏ thành nhiều phần, mỗi phần được gửi đến một máy trạm riêng biệt. Mỗi máy trạm thực thi chương trình mapper trên phần dữ liệu nhận được.
 Chương trình mapper đọc dữ liệu vào và chuyển thành các cặp <key, value>.
 Giá trị của <key, value> do người lập trình xác định tùy theo yêu cầu bài toán. 
-Ví dụ, với bài toán đếm từ, cặp <key, value> là <word, count>. Với mỗi từ đọc được, chương trình mapper xuất ra cặp giá <word, 1>. Các cặp <word, 1> sẽ được gộp và nhóm lại, những cặp <word, 1> giống nhau sẽ được nhóm lại và gửi đến một máy trạm riêng lẻ để xử lý ở pha reduce.
+Ví dụ, với bài toán đếm từ, cặp <key, value> là <word, count>. Với mỗi từ đọc được, chương trình mapper xuất ra cặp giá trị <word, 1>. Các cặp <word, 1> sẽ được gộp và nhóm lại, những cặp <word, 1> giống nhau sẽ được nhóm lại và gửi đến một máy trạm riêng lẻ để xử lý ở pha reduce.
 <br>
 #### Reduce
 Chương trình reducer xử lý các cặp <key, value> và rút gọn chúng theo cách mong muốn. 
