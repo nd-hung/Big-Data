@@ -279,7 +279,6 @@ Có thể biểu diễn việc theo dõi nhau của các tài khoản Twitter b�
 
 ```python
 import networkx as nx
-import matplotlib.pyplot as plt
 
 edges = []
 
@@ -293,11 +292,9 @@ for line in f.readlines():
 G = nx.DiGraph(edges)
 
 # visualize the graph
-nx.draw(G, with_labels=True, arrows=True, arrowstyle='-|>', arrow_size=3,
+nx.draw(G, with_labels=True, arrows=True, arrowstyle='-|>', arrowsize=15,
         node_color='#3498DB', node_size=800, 
         edge_color='#FF5733')
-
-plt.show()
 ```
 <img src="figs/follower_graph.png"/>
 
