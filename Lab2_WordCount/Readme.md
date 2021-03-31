@@ -271,7 +271,8 @@ Yêu cầu: Vận dụng cả 2 phương pháp (1) truyền thống và (2) dữ
 - Liệt kê top 5 người dùng có nhiều theo dõi nhất.
 - Liệt kê tất cả các cặp người dùng theo dõi lẫn nhau trong file dữ liệu được cho. 
 
-**Hướng dẫn**
+**Hướng dẫn:**
+
 Có thể biểu diễn việc theo dõi nhau của các tài khoản Twitter bằng một đồ thị có hướng (directed graph). "`a` theo dõi `b`" tương ứng với tồn tại cạnh (edge) nối từ đỉnh (node) a đến đỉnh b của đồ thị. 
 
 Có thể sử dụng thư viện [NetworkX](https://networkx.org) để biểu diễn đồ thị trên. Đoạn code sau đây minh họa đọc dữ liệu từ file `data/twitter_following.txt`, tạo đồ thị thể hiện mối quan hệ theo dõi, tìm và liệt kê các cặp tài khoản theo dõi lẫn nhau (mutual followers):
@@ -298,7 +299,7 @@ nx.draw(G, with_labels=True, arrows=True, arrowstyle='-|>', arrow_size=3,
 
 plt.show()
 ```
-<img src="figs/follower_graph.png" />
+<img src="figs/follower_graph.png"/>
 
 ```python
 
