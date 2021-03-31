@@ -1,5 +1,5 @@
 <h1 style="text-align:center">
-<img src="figs/NTU_logo.png" align="left" width="50" height="50" />  XỬ LÝ DỮ LIỆU LỚN </h1>
+<img  style="float: left" src="figs/NTU_logo.png" width="50" height="50" />  XỬ LÝ DỮ LIỆU LỚN </h1>
 
 <h1 style="text-align:center"> Lab 3: Phân tích dữ liệu thời tiết </h1>
 
