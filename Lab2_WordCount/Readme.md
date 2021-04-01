@@ -1,5 +1,7 @@
-<img src="figs/NTU_logo.png" align="left" width="50" height="50" /> <br>
-<h1 style="text-align:center"> XỬ LÝ DỮ LIỆU LỚN </h1>
+<h1>
+<img src="figs/NTU_logo.png" align="left" width="50" height="50" />
+XỬ LÝ DỮ LIỆU LỚN 
+</h1>
 
 <h1 style="text-align:center"> Lab 2: Word Count </h1>
 
