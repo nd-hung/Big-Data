@@ -40,16 +40,16 @@ Cho một tập dữ liệu văn bản gồm nhiều file chứa trong một th�
 import os
 
 # Xác định thư mục chứa dữ liệu:
-data_foder = "data/gutenberg"
+data_folder = "data/gutenberg"
 
 # Khởi tạo từ điển: 
 word_counts = {}
 
 # Mở lần lượt các file văn bản trong thư mục dữ liệu để đếm từ:
-for fname in os.listdir(data_foder):
+for fname in os.listdir(data_folder):
     if fname.endswith(".txt"):
         try:
-            f = open(os.path.join(data_foder, fname))
+            f = open(os.path.join(data_folder, fname))
             for line in f.readlines():
                 for word in line.split():
                     if word in word_counts:
