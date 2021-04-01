@@ -1,5 +1,5 @@
 <h1>
-<img src="figs/NTU_logo.png" align="left" width="50" height="50" />
+<img src="figs/NTU_logo.png" align="left" width="40" height="40" />
 XỬ LÝ DỮ LIỆU LỚN 
 </h1>
 
