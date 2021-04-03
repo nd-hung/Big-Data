@@ -102,9 +102,10 @@ Ví dụ, để đếm số lần xuất hiện của mỗi từ, chương trìn
 
 <p align="center">
     <img src="figs/MapReduce.png" width="70%"/>
-    <center>
-        <caption>Minh họa giải quyết bài toán đếm từ với MapReduce</caption>
-    </center>
+
+    
+    <caption>Minh họa giải quyết bài toán đếm từ với MapReduce</caption>
+    
 </p>
 
 
