@@ -101,8 +101,10 @@ Chương trình reducer xử lý các cặp <key, value> và rút gọn chúng t
 Ví dụ, để đếm số lần xuất hiện của mỗi từ, chương trình reducer sẽ cộng giá trị của tất cả các cặp <word, 1> trùng nhau.
 
 <p align="center">
-<img src="figs/MapReduce.png" width="70%"/>
-<center><caption>Minh họa giải quyết bài toán đếm từ với MapReduce</caption></center>
+    <img src="figs/MapReduce.png" width="70%"/>
+    <center>
+        <caption>Minh họa giải quyết bài toán đếm từ với MapReduce</caption>
+    </center>
 </p>
 
 
