@@ -22,9 +22,7 @@ Bài thực hành này xử lý dữ liệu thu thập bởi [Trung tâm dữ li
 
 | <img src="figs/ncdc_data_sample.PNG" width="70%"/> |
 |:--:|
-| Diễn giải một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi nằm trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách).    
-Nguồn: *Tom White, Hadoop: The Definitive Guide, 4th Ed., O'Reilly, 2015*
-|
+| Diễn giải một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi nằm trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách). Nguồn: *Tom White, Hadoop: The Definitive Guide, 4th Ed., O'Reilly, 2015* |
 
 ## Chương trình MapReduce  <a name = "mapreduceprogram"/>
 
