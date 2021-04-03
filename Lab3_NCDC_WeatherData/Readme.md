@@ -20,16 +20,11 @@ Bài thực hành này xử lý dữ liệu thu thập bởi [Trung tâm dữ li
 
 **Yêu cầu**: Từ tập dữ liệu thu thập được, hãy tìm nhiệt độ cao nhất của mỗi năm.
 
-<p align="center">
-<img src="figs/ncdc_data_sample.PNG" width="70%"/>
-<center>
-    <caption>Diễn giải một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi nằm trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách). 
-    </caption>
-    <em>
-        Nguồn: Tom White, Hadoop: The definitive Guide, 4th Ed.
-    </em>
-</center>
-</p>
+| <img src="figs/ncdc_data_sample.PNG" width="70%"/> |
+|:--:|
+| Diễn giải một mẫu dữ liệu khí tượng từ NCDC. Trong thực tế mỗi bản ghi nằm trên một dòng, các trường dữ liệu liên tiếp nhau (không có ký tự phân cách).    
+Nguồn: *Tom White, Hadoop: The Definitive Guide, 4th Ed., O'Reilly, 2015*
+|
 
 ## Chương trình MapReduce  <a name = "mapreduceprogram"/>
 
