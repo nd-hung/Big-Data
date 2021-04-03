@@ -250,4 +250,6 @@ print("\nĐịa điểm quan trắc: ", result['name'] + ', ' + result['cc'])
     
     Địa điểm quan trắc:  Lohtaja, FI
 
-[please click here](docs/ncdc_result_visualization_with_tooltips.html)
+<iframe
+  src="docs/ncdc_result_visualization_with_tooltips.html"
+></iframe>
