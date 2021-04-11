@@ -214,6 +214,7 @@ Thiết lập thư mục tạm cho Hadoop:
 ```shell
 sudo mkdir -p /app/hadoop/tmp
 sudo chown hdoop:hdoop /app/hadoop/tmp
+sudo chmod 750 /app/hadoop/tmp
 ```
 Để thiết lập Hadoop chế độ giả lập phân tán (pseudo-distributed mode), cần xác định URL đến máy chủ chính (NameNode) và thư mục để Hadoop sử dụng cho tiến trình map và reduce.
 
