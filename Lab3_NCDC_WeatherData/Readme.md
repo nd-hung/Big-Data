@@ -9,7 +9,7 @@
 
 - [Chạy ứng dụng trên Hadoop](#run_program) <br>
 - [Bài tập](#excercises)
-
+- [Tham khảo](#references) 
 
 ## Giới thiệu <a name="intro"/>
 
@@ -252,3 +252,9 @@ print("\nĐịa điểm quan trắc: ", result['name'] + ', ' + result['cc'])
 
 [Biểu đồ kết quả tổng hợp](https://nd-hung.github.io/Big-Data/Lab3_NCDC_WeatherData/docs/ncdc_result_visualization_with_tooltips.html)
 
+
+## Tham khảo <a name="references"/>
+
+Tom White, Hadoop: The Definitive Guide, 4th Ed.
+
+[Hadoop Streaming](https://hadoop.apache.org/docs/r3.2.2/hadoop-streaming/HadoopStreaming.html)
