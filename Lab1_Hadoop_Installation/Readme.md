@@ -12,7 +12,7 @@
     * [Khởi động Hadoop](#start_hadoop)
     * [Dừng Hadoop](#stop_hadoop)
     * [Truy cập Hadoop qua trình duyệt Web](#hadoopUI)
-
+- [Tham khảo](#references) 
 
 ## Giới thiệu <a name="intro" />
 [Hadoop](https://hadoop.apache.org/) là nền tảng công nghệ mã nguồn mở dùng để xây dựng hệ thống xử lý dữ liệu lớn (big data) theo mô hình phân tán (distributed computing). Hadoop có độ tin cậy cao (reliable) và khả năng mở rộng dễ dàng (scalable). 
@@ -336,3 +336,7 @@ http://localhost:8088
 ```
 <img src="figs/yarn_ui.png">
 
+## Tham khảo <a name="references"/>
+[Michael G. Noll, Running Hadoop On Ubuntu Linux (Single-Node Cluster)](https://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/ )
+
+[Apache Hadoop 3.2.2](https://hadoop.apache.org/docs/r3.2.2/)
