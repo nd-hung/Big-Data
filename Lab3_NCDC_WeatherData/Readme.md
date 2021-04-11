@@ -250,5 +250,5 @@ print("\nĐịa điểm quan trắc: ", result['name'] + ', ' + result['cc'])
     
     Địa điểm quan trắc:  Lohtaja, FI
 
-[Xem biểu đồ kết quả tổng hợp](https://nd-hung.github.io/Big-Data/Lab3_NCDC_WeatherData/docs/ncdc_result_visualization_with_tooltips.html)
+[Biểu đồ kết quả tổng hợp](https://nd-hung.github.io/Big-Data/Lab3_NCDC_WeatherData/docs/ncdc_result_visualization_with_tooltips.html)
 
