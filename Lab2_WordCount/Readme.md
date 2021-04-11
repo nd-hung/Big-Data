@@ -17,6 +17,7 @@ XỬ LÝ DỮ LIỆU LỚN
     * [Chạy ứng dụng MapReduce](#run_mapreduce_job)
     * [Một số lỗi thường gặp](#common_issues)
 - [Bài tập](#excercises)
+- [Tham khảo](#references) 
 
 
 ## Giới thiệu <a name="intro"/>
@@ -330,3 +331,9 @@ Từ file dữ liệu trên, hãy thực hiện các xử lý sau:
 - Liệt kê top 10 tài khoản được nhắc đến nhiều nhất.
 - Tìm khoảng thời gian trong ngày (0-24 giờ) tác giả đăng bài nhiều nhất.
 
+
+## Tham khảo <a name="references"/>
+
+[Michael G. Noll, Writing An Hadoop MapReduce Program In Python](https://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/ )
+
+[Hadoop Streaming](https://hadoop.apache.org/docs/r3.2.2/hadoop-streaming/HadoopStreaming.html)
