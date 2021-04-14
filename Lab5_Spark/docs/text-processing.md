@@ -24,7 +24,7 @@ from pyspark import SparkContext
 sc = SparkContext("local", "Text processing with PySpark")
 ```
 
-## Tạo RDD từ bộ nhớ ngoài
+## Tạo RDD từ bộ nhớ ngoài <a name="create_rdd"/>
 
 Spark thực hiện các xử lý trên một cấu trúc gọi là resilient distributed datasets (RDD). Mỗi RDD được chia thành các phân vùng (partition), mỗi phân vùng có thể được xử lý trên các trạm khác nhau trên cụm máy tính. RDD có thể chứa kiểu dữ liệu của Python, Java, Scala, hoặc đối tượng của lớp tự định nghĩa. Spark xử lý xoay quanh RDD: tạo mới, biến đổi RDD, tính toán kết quả từ RDD.
 
