@@ -50,8 +50,6 @@ words = lines.flatMap(lambda line: line.split(" "))
 
 Các xử lý trên RDDs được chia làm hai loại: *biến đổi* (transformations) và *hành động* (actions).
 Thao tác biến đổi thực hiện xử lý trên RDDs và *trả về một RDD mới*, chẳng hạn như map(), filter(). Thao tác hành động xử lý RDD và *trả về kết quả cho trình điều khiển hoặc lưu lên bộ nhớ ngoài*, chẳng hạn count() hay take().
-As we’ve discussed, RDDs support two types of operations: transformations and
-actions. 
 
 Để đếm tần số của mỗi từ trên tập dữ liệu, trước hết sử dụng phương thức map() để biến đổi mỗi từ thành một cặp <key, value> = <word, 1>. Sau đó gọi phương thức reduceByKey() để thực hiện gộp kết quả theo qui tắc được định nghĩa trong hàm truyền cho nó. Ở đây hàm
 ```python
