@@ -10,7 +10,7 @@
 
 Python + Spark -> PySpark
 
-PySpark là phiên bản Apache Spark dùng cho Python, kết hợp sức mạnh của Python và Spark thành một nền mảng xử lý dữ liệu lớn ưu việt:
+PySpark là phiên bản Apache Spark dùng cho Python, kết hợp sức mạnh của Python và Spark thành nền tảng xử lý dữ liệu lớn ưu việt:
 - Apache Spark là nền tảng xử lý dữ liệu lớn nguồn mở, tốc độ xử lý cao, dễ sử dụng, hỗ trợ nhiều ngôn ngữ lập trình, chạy được trên nhiều môi trường, khả năng phát triển ứng dụng đa dạng: SQL, machine learning, Graph, Streaming,...
 - Python là ngôn ngữ được sử dụng chủ yếu hiện nay trong lĩnh vực machine learning và khoa học dữ liệu. Python có nhiều thư viện giúp nhanh chóng phát triển các ứng dụng phân tích dữ liệu: numpy, pandas, scikit-learn, matplotlib,... 
 
