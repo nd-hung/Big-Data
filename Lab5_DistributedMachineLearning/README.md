@@ -105,7 +105,7 @@ Gỉa sử chọn số cụm là 3, tiến hành huấn luyện mô hình K-mean
 
 ```python
 # Huấn luyện mô hình K-means với K=3 trên toàn bộ tập dữ liệu.
-# Trong thực tế, để đánh giá một mô hình ML, tập dữ liệu thường được chia làm 3 phần:
+# Trong thực tế, để huấn luyện một mô hình ML, tập dữ liệu thường được chia làm 3 phần:
 # - train set dùng để huấn luyện,
 # - validation set dùng để đánh giá, tinh chỉnh mô hình trong quá trình huấn luyện,
 # - test set để kiểm tra hiệu năng của mô hình trên dữ liệu hoàn toàn mới.
