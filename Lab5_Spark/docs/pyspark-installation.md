@@ -10,7 +10,7 @@
 
 Python + Spark -> PySpark
 
-PySpark là phiên bản Apache Spark dùng cho Python, kết hợp sức mạnh của Python và Spark thành nền tảng xử lý dữ liệu lớn ưu việt:
+PySpark là phiên bản Apache Spark dùng cho Python, là một nền tảng xử lý dữ liệu lớn ưu việt nhờ kết hợp sức mạnh của Python và Spark:
 - Apache Spark là nền tảng xử lý dữ liệu lớn nguồn mở, tốc độ xử lý cao, dễ sử dụng, hỗ trợ nhiều ngôn ngữ lập trình, chạy được trên nhiều môi trường, khả năng phát triển ứng dụng đa dạng: SQL, machine learning, graph, streaming,...
 - Python là ngôn ngữ được sử dụng chủ yếu hiện nay trong lĩnh vực machine learning và khoa học dữ liệu. Python có nhiều thư viện giúp nhanh chóng phát triển các ứng dụng phân tích dữ liệu: numpy, pandas, scikit-learn, matplotlib,... 
 
@@ -24,7 +24,7 @@ Có thể cài đặt PySpark theo các chế độ sau:
 
 Có thể dùng một trong các cách sau để cài PySpark: Dùng PIP, dùng Conda, hoặc cài đặt từ nguồn.
 
-### Cài đặt PySpark với pip
+### Cài đặt PySpark với PyPI PIP
 
 #### Cài đặt PIP
 PIP là trình quản lý các thư viện Python.
@@ -63,16 +63,16 @@ Welcome to
 ```
 
 ### Cài đặt PySpark với Conda
-Conda - được kèm theo Anaconda - là trình quản lý môi trường và các thư viện nguồn mở thay thế PIP và virtualenv. Ưu điểm của cài đặt bằng Conda là cho phép tạo môi trường ảo (virtual environment) trong đó cài đặt các công cụ cần thiết. Điều này cho phép tạo nhiều môi trường làm việc độc lập với nhau.
+Conda - được kèm theo Anaconda - là trình quản lý môi trường và các thư viện nguồn mở thay thế PIP và virtualenv. Ưu điểm của cài đặt bằng Conda là cho phép tạo môi trường ảo (virtual environment). Điều này cho phép tạo nhiều môi trường làm việc độc lập với nhau, mỗi môi trường ảo chỉ cài đặt các công cụ cần thiết.
 
-Để sử dụng Conda, cần [tải và cài đặt bộ Anaconda](https://www.anaconda.com/products/individual). Sau đó, kiểm tra việc cài đặt Conda bằng lệnh sau:
+Để sử dụng Conda, cần [tải và cài đặt Anaconda](https://www.anaconda.com/products/individual). Sau đó, kiểm tra việc cài đặt Conda bằng lệnh sau:
 ```shell
 conda --version
 conda 4.10.0
 ```
 
 #### Tạo môi trường ảo: 
-Mở Ubuntu Terminal và nhập lệnh sau để tạo môi trường ảo với tên `pyspark_env`:
+Mở Ubuntu Terminal và nhập lệnh sau để tạo môi trường ảo, chẳng hạn môi trường cài đặt `PySpark` có tên là `pyspark_env`:
 
 ```shell 
 conda create -n pyspark_env
