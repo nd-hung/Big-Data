@@ -27,7 +27,7 @@ Có thể dùng một trong các cách sau để cài PySpark: Dùng PIP, dùng 
 ### Cài đặt PySpark với PyPI PIP
 
 #### Cài đặt PIP
-PIP là trình quản lý các thư viện Python.
+PIP là trình quản lý cài đặt các thư viện Python.
 
 Trước hết, cần kiểm tra PIP đã được cài đặt chưa (PIP cài sẵn trên Python >= 3.4). Với Python 3, dùng phiên bản PIP3:
 
