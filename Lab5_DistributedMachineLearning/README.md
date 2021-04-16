@@ -1,6 +1,6 @@
 # Thuật toán K-means phân tán với PySpark
 
-- [Spark Machine Learning Libarary](#mllib)
+- [Spark Machine Learning Library](#mllib)
 - [Thuật toán K-means với PySpark](#spark_kmeans)
 - [So sánh kết quả với thư viện Scikit-learn](#comparison)
 
