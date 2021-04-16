@@ -1,4 +1,4 @@
-# Cài đặt thuật toán K-means phân tán với PySpark
+# Thuật toán K-means phân tán với PySpark
 
 - [Spark Machine Learning Libarary](#mllib)
 - [Thuật toán K-means với PySpark](#spark_kmeans)
@@ -96,21 +96,18 @@ irisFeatures.show(5)
     only showing top 5 rows
     
 
-
 Lúc này dữ liệu đã sẵn sàng để đưa vào huấn luyện mô hình ML (ở đây là K-means).
 Gỉa sử chọn số cụm là 3, tiến hành huấn luyện mô hình K-means với PySpark bằng các lệnh sau:
 
 ### Huấn luyện mô hình
 
-
 ```python
-# Huấn luyện mô hình K-means với K=3 trên toàn bộ tập dữ liệu.
+# Huấn luyện mô hình K-means với K=3 trên toàn bộ tập dữ liệu
 kmeans = KMeans().setK(3).setSeed(0)
 model = kmeans.fit(irisFeatures)
 ```
 
 ### In kết quả
-
 
 ```python
 # In ra tâm điểm của các cụm
@@ -132,7 +129,6 @@ spark.stop()
 
 
 ### So sánh với kết quả chạy K-means bằng thư viện Scikit-learn <a name="comparison"/>
-
 
 ```python
 from sklearn import datasets
