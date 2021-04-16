@@ -103,7 +103,8 @@ Ví dụ, để đếm số lần xuất hiện của mỗi từ, chương trìn
 
 | <img src="figs/MapReduce.png" width="70%"/> | 
 |:--:| 
-| Minh họa giải quyết bài toán đếm từ với mô hình MapReduce |
+| Minh họa giải quyết bài toán đếm từ với mô hình MapReduce. 
+*Image source: https://bit.ly/3gfU6te* |
 
 ```python
 #!/usr/bin/python3
