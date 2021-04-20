@@ -2,7 +2,7 @@
 </h1>
 
 <h2> 
-Nguyễn Đình Hưng 
+[Nguyễn Đình Hưng](nd-hung.github.io)
 <br>
 Khoa Công nghệ thông tin, Trường đại học Nha Trang
 </h2>
