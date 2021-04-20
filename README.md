@@ -3,7 +3,9 @@
 
 ### [Nguyễn Đình Hưng](nd-hung.github.io)
 
-### Khoa Công nghệ thông tin, Trường đại học Nha Trang
+<h3>
+Khoa Công nghệ thông tin, Trường đại học Nha Trang
+</h3>
 
 ### [Lab 1: Hadoop Installation](https://github.com/nd-hung/Big-Data/tree/main/Lab1_Hadoop_Installation)
 ### [Lab 2: Hello Big Data](https://github.com/nd-hung/Big-Data/tree/main/Lab2_WordCount)
