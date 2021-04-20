@@ -1,8 +1,7 @@
 <h1 align="center"> Thực hành Xử lý dữ liệu lớn
 </h1>
 
-<h2> 
-[Nguyễn Đình Hưng](nd-hung.github.io)
+## [Nguyễn Đình Hưng](nd-hung.github.io)
 <br>
 Khoa Công nghệ thông tin, Trường đại học Nha Trang
 </h2>
