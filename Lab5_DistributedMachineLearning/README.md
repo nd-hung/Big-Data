@@ -1,5 +1,5 @@
  
-Bài thực hành này vận dụng nền tảng Spark để cài đặt thuật toán phân cụm K-means trên [tập dữ liệu Iris](https://archive.ics.uci.edu/ml/datasets/iris).
+Bài thực hành này vận dụng nền tảng Spark để cài đặt thuật toán phân cụm K-means phân tán.  Chương trình minh họa với [tập dữ liệu Iris](https://archive.ics.uci.edu/ml/datasets/iris).
 
 ## Thuật toán K-means phân tán với PySpark
 
