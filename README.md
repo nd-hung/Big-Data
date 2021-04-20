@@ -2,7 +2,7 @@
 </h1>
 
 ### [Nguyễn Đình Hưng](nd-hung.github.io)
-<br>
+
 ### Khoa Công nghệ thông tin, Trường đại học Nha Trang
 
 ### [Lab 1: Hadoop Installation](https://github.com/nd-hung/Big-Data/tree/main/Lab1_Hadoop_Installation)
