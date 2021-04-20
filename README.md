@@ -1,9 +1,9 @@
 <h1 align="center"> Thực hành Xử lý dữ liệu lớn
 </h1>
 
-## [Nguyễn Đình Hưng](nd-hung.github.io)
+### [Nguyễn Đình Hưng](nd-hung.github.io)
 <br>
-Khoa Công nghệ thông tin, Trường đại học Nha Trang
+### Khoa Công nghệ thông tin, Trường đại học Nha Trang
 </h2>
 
 ### [Lab 1: Hadoop Installation](https://github.com/nd-hung/Big-Data/tree/main/Lab1_Hadoop_Installation)
