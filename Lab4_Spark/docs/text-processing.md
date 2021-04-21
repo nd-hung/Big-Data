@@ -41,7 +41,7 @@ Ví dụ: để tách mỗi dòng văn bản thành các từ riêng biệt, có
 ```python
 lambda line: line.split(" ")
 ```
-*hàm không có tên* này nhận dữ liệu vào là một dòng văn bản, trả về một danh sách các từ của dòng đó:
+*hàm không có tên* này nhận dữ liệu vào là một dòng văn bản, trả về một danh sách các từ của dòng đó (các từ cách nhau bởi khoảng trắng):
 
 
 ```python
