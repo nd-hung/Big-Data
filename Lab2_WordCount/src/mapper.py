@@ -6,7 +6,7 @@ import sys
 # Chương trình Python chạy trên Hadoop MapReduce qua tính năng Streaming.
 # Dữ liệu vào từ thiết bị nhập chuẩn (STDIN)
 # Kết quả xử lý gửi ra thiết bị xuất chuẩn (STDOUT)
-
+# Author: Hung Nguyen
 for line in sys.stdin.buffer.raw:
     # loại bỏ ký tự trắng ở đầu và cuối chuỗi
     line = line.strip()
