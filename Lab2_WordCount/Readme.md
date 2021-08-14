@@ -83,7 +83,7 @@ for w in list(word_counts)[0:10]:
     Complete                2
     
 
-Chương trình trên xử lý tuần tự trên một máy đơn. Với tập dữ liệu rất lớn thì việc xử lý sẽ mất nhiều thời gian. <br>
+Chương trình trên xử lý tuần tự trên một máy đơn. Với tập dữ liệu rất lớn thì việc xử lý tuần tự sẽ mất nhiều thời gian. <br>
 Một cách giải quyết là sử dụng Hadoop để thực hiện xử lý phân tán.  
 
 ## Giải pháp Big Data: Hadoop <a name="bigdata_approach"/>
