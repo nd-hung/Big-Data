@@ -11,16 +11,15 @@ Bài thực hành này sử dụng nền tảng Spark để cài đặt thuật 
 
 Spark cung cấp [thư viện MLLib (Machine Learning Library)](https://spark.apache.org/docs/3.1.1/ml-guide.html) cho phép triển khai các dự án machine learning phân tán. Các tính năng của MLLib bao gồm:
 - Một số thuật toán ML tiêu biểu: phân lớp (classification), hồi qui (regression), phân cụm (clustering), collaborative filtering;
-- Xử lý đặc trưng (featurization): trích xuất (feature extraction), biến đối (transformation), giảm chiều (dimensionality reduction), chọn lọc (feature selection);
+- Xử lý đặc trưng (featurization): trích xuất (feature extraction), biến đổi (transformation), giảm chiều (dimensionality reduction), chọn lọc (feature selection);
 
 - Pipelines: các công cụ xây dựng, tinh chỉnh và đánh giá mô hình ML;
-- Các tiện ích: xử lý dữ liệu, lưu/nạp mô hình, v.v.
+- Các tiện ích: xử lý dữ liệu, lưu/nạp mô hình, v.v..
 
 Bên cạnh thư viện MLLib (RDD-based API), hiện nay Spark cung cấp thư viện ML mới (DataFrame-based API) với nhiều tính năng dễ sử dụng hơn MLLib. 
 
 ## Thuật toán K-means với PySpark <a name="spark_kmeans"/>
 ### Khai báo các thư viện 
-
 
 ```python
 import pandas as pd
