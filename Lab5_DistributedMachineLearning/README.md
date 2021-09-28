@@ -1,7 +1,5 @@
  
-Bài thực hành này sử dụng nền tảng Spark để cài đặt thuật toán phân cụm K-means phân tán.  Chương trình minh họa với [tập dữ liệu Iris](https://archive.ics.uci.edu/ml/datasets/iris).
-
-## Thuật toán K-means phân tán với PySpark
+Bài thực hành này minh họa ứng dụng Spark để triển khai các mô hình học máy (machine learning) phân tán. 
 
 - [Spark Machine Learning Library](#mllib)
 - [Thuật toán K-means với PySpark](#spark_kmeans)
@@ -32,7 +30,6 @@ from pyspark.ml.feature import VectorAssembler
 ### Khởi tạo Spark Session
 
 Spark phiên bản 2.0 trở đi cung cấp lớp SparkSession để khởi tạo các chức năng của Spark. Sau khi tạo Spark Session, người dùng có thể lập trình với RDD, DataFrame và Dataset. 
-
 
 ```python
 # Create new Spark session
@@ -73,11 +70,9 @@ iris_data.show(10)
     only showing top 10 rows
     
 
-
 ### Tạo vector đặc trưng từ DataFrame
 
 Để tạo vector đặc trưng (feature vector) cho từng dòng dữ liệu, dùng lớp VectorAssembler để ghép giá trị ở các cột trong DataFrame thành một cột mới chứa vector đặc trưng:
-
 
 ```python
 assembler = VectorAssembler(inputCols = ["sepal-length", "sepal-width", "petal-length", "petal-width"], 
@@ -109,7 +104,7 @@ kmeans = KMeans().setK(3).setSeed(0)
 model = kmeans.fit(irisFeatures)
 ```
 
-### In kết quả
+### Hiển thị kết quả
 
 ```python
 # In ra tâm điểm của các cụm
@@ -138,7 +133,6 @@ from sklearn.cluster import KMeans
 
 np.random.seed(0)
 ```
-
 
 ```python
 # Nạp dữ liệu
