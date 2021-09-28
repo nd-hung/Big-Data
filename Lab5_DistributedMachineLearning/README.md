@@ -1,4 +1,3 @@
- 
 Bài thực hành này minh họa ứng dụng Spark để triển khai các mô hình học máy (machine learning) phân tán. 
 
 - [Spark Machine Learning Library](#mllib)
@@ -8,9 +7,8 @@ Bài thực hành này minh họa ứng dụng Spark để triển khai các mô
 ## Spark Machine Learning Library <a name="mllib"/>
 
 Spark cung cấp [thư viện MLLib (Machine Learning Library)](https://spark.apache.org/docs/3.1.1/ml-guide.html) cho phép triển khai các dự án machine learning phân tán. Các tính năng của MLLib bao gồm:
-- Một số thuật toán ML tiêu biểu: phân lớp (classification), hồi qui (regression), phân cụm (clustering), collaborative filtering;
+- Một số bài toán ML tiêu biểu: phân lớp (classification), hồi qui (regression), phân cụm (clustering), collaborative filtering;
 - Xử lý đặc trưng (featurization): trích xuất (feature extraction), biến đổi (transformation), giảm chiều (dimensionality reduction), chọn lọc (feature selection);
-
 - Pipelines: các công cụ xây dựng, tinh chỉnh và đánh giá mô hình ML;
 - Các tiện ích: xử lý dữ liệu, lưu/nạp mô hình, v.v..
 
