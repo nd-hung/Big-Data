@@ -117,8 +117,8 @@ wordFrequencies.saveAsTextFile(savingPath)
 
 ## Bài tập<a name="excercises"/>
 
-1. Từ file `apache_logs` hãy lọc ra các dòng thông báo lỗi (chứa từ "error") với PySpark.
-2. Xử lý dữ liệu Twitter
+### 1. Từ file `apache_logs` hãy lọc ra các dòng thông báo lỗi (chứa từ "error") với PySpark.
+### 2. Xử lý dữ liệu Twitter
 Cho file văn bản `elonmusk_tweets.csv` chứa các dòng tweets của Elon Musk từ 2011-2017. Dữ liệu được chia sẻ bởi [Adam Helsinger](https://data.world/adamhelsinger/elon-musk-tweets-until-4-6-17). Từ file dữ liệu trên, hãy thực hiện các xử lý sau với PySpark:
 - Liệt kê 20 từ được nhắc đến nhiều nhất.
 - Liệt kê 10 tài khoản được nhắc đến nhiều nhất.
