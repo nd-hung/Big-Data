@@ -30,7 +30,7 @@ Các tiến trình Hadoop (daemons) chạy trên một cụm nhiều máy tính 
 Bài thực hành này thực hiện cài đặt Hadoop chế độ giả lập phân tán trên môi trường Linux. 
 
 Các phiên bản phần mềm được sử dụng bao gồm:
-- Hệ điều hành Ubuntu (https://releases.ubuntu.com/18.04/ubuntu-18.04.5-desktop-amd64.iso). 
+- Hệ điều hành Ubuntu (https://releases.ubuntu.com/18.04/ubuntu-18.04.6-desktop-amd64.iso). 
 Có thể cài đặt Ubuntu trên môi trường máy ảo (Virtual Box, https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Win.exe)
 - Java 8 (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 - Python 3 (Được cài sẵn trên Ubuntu 18.04)
