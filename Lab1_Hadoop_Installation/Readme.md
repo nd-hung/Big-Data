@@ -31,7 +31,7 @@ Bài thực hành này thực hiện cài đặt Hadoop chế độ giả lập 
 
 Các phiên bản phần mềm được sử dụng bao gồm:
 - Hệ điều hành Ubuntu (https://releases.ubuntu.com/18.04/ubuntu-18.04.6-desktop-amd64.iso). 
-Có thể cài đặt Ubuntu trên môi trường máy ảo (Virtual Box, https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Win.exe)
+Để cho tiện, có thể cài đặt Ubuntu trên Windows với phần mềm ảo hóa như [Virtual Box](https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Win.exe)
 
 ([Cách chạy Ubuntu full màn hình trong Virtual Box](https://askubuntu.com/questions/18425/how-to-use-ubuntu-in-full-screen-mode-on-virtualbox/18426#18426?newreg=1476885e2aa7408ebaf2224641897347))
 
