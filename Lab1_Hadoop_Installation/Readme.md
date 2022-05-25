@@ -15,7 +15,7 @@
 - [Tham khảo](#references) 
 
 ## Giới thiệu <a name="intro" />
-[Hadoop](https://hadoop.apache.org/) là nền tảng mã nguồn mở dùng để xây dựng hệ thống xử lý dữ liệu lớn (big data) theo mô hình phân tán (distributed computing). Các ưu điểm chính của Hadoop là độ tin cậy cao (reliable), khả năng mở rộng dễ dàng (scalable) và chi phí thấp. 
+[Hadoop](https://hadoop.apache.org/) là nền tảng mã nguồn mở dùng để xây dựng hệ thống xử lý dữ liệu lớn (big data) theo mô hình phân tán (distributed computing). Các ưu điểm chính của Hadoop là độ tin cậy cao (reliable), khả năng mở rộng dễ dàng (scalable) và chi phí hợp lý (cost-effective). 
 
 Có thể triển khai hệ thống Hadoop theo một trong ba chế độ (mode) sau:
 - Độc lập (Standalone): 
