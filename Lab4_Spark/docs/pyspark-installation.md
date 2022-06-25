@@ -1,6 +1,5 @@
 # Cài đặt PySpark
 
-
 - [Giới thiệu](#intro)
 - [Cài đặt PySpark](#install_pyspark)
 - [Chạy ứng dụng PySpark](#run_pyspark)
@@ -71,7 +70,7 @@ conda --version
 conda 4.10.0
 ```
 
-#### Tạo môi trường ảo: 
+#### Tạo môi trường ảo
 Mở Ubuntu Terminal và nhập lệnh sau để tạo môi trường ảo, chẳng hạn môi trường cài đặt `PySpark` có tên là `pyspark_env`:
 
 ```shell 
@@ -122,7 +121,7 @@ export PYTHONPATH=$(ZIPS=("$SPARK_HOME"/python/lib/*.zip); IFS=:; echo "${ZIPS[*
 
 Đoạn chương trình PySpark sau đây thực hiện đếm số lần xuất hiện của mỗi từ trong một tập dữ liệu văn bản. Chương trình thực hiện bằng hai cách: (1) Chạy trực tiếp trên môi trường tương tác Spark shell, và (2) Chạy ứng dụng trên cluster. 
 
-### Chạy PySpark trên môi trường dòng lệnh Spark Shell:
+### Chạy PySpark trên môi trường dòng lệnh Spark Shell
 
 Trước hết cần khởi động Spark shell:
 ```shell
@@ -158,7 +157,7 @@ Lưu kết quả xử lý lên bộ nhớ ngoài:
 wordFrequencies.saveAsTextFile("/home/hung/labs/data/output/gutenberg-result")
 ```
 
-### [Chạy PySpark trên cluster:](https://spark.apache.org/docs/latest/submitting-applications.html)
+### [Chạy PySpark trên cluster](https://spark.apache.org/docs/latest/submitting-applications.html)
 Để chạy ứng dụng PySpark trên cluster, cần tổ chức thành file mã nguồn độc lập, sau đó sử dụng lệnh `spark-submit` để nạp & thực thi ứng dụng.
 
 Giả sử file `wordcount.py` chứa mã nguồn PySpark đếm số lần xuất hiện của mỗi từ trong một tập dữ liệu văn bản. Từ Terminal gọi lệnh sau để nạp & chạy chương trình:
@@ -170,8 +169,3 @@ spark-submit wordcount.py
 [PySpark Documentation](https://spark.apache.org/docs/3.1.1/api/python/)
 
 Zaharia M., et al. Learning Spark (O'Reilly, 2015)
-
-
-```python
-
-```
