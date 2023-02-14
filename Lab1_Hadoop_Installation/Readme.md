@@ -133,7 +133,7 @@ sudo apt install openjdk-8-jdk -y
 Phiên bản Hadoop được sử dụng là 3.2.2. Đăng nhập vào tài khoản quản trị Hadoop (ở đây là "hdoop") và tải nguồn cài đặt:
 
 ```shell
-wget https://mirror.downloadvn.com/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz
+wget https://archive.apache.org/dist/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz
 ```
 (Hoặc có thể copy nguồn cài Hadoop từ USB hay từ máy tính khác)
 
