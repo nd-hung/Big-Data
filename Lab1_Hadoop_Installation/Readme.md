@@ -37,7 +37,7 @@ Các phiên bản phần mềm được sử dụng bao gồm:
 
 - Java 8
 - Python 3 (Được cài sẵn trên Ubuntu 18.04)
-- Hadoop 3.2.2 (https://mirror.downloadvn.com/apache/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz)
+- Hadoop 3.2.2 (https://archive.apache.org/dist/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz)
 
 
 ## Thiết lập môi trường <a name="create_env"/>
