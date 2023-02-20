@@ -95,7 +95,7 @@ hdfs dfs -mkdir -p data/lab3
 Hệ thống tạo thư mục `/user/hdoop/data/lab3` trên HDFS.
 #### Đưa dữ liệu từ máy cục bộ lên HDFS
 Giả sử thư mục chứa dữ liệu đầu vào là `/home/hung/Downloads/ncdc` chứa các files dữ liệu thời tiết của NCDC đã được tiền xử lý gộp theo từng năm.
-Thực hiện lệnh sau để copy dữ liệu lên HDFS:
+Thực hiện lệnh sau để copy dữ liệu lên HDFS (lưu ý sửa tên thư mục, đường dẫn cho phù hợp):
 ```shell
 hdfs dfs -copyFromLocal /home/hung/Downloads/ncdc /user/hdoop/data/lab3
 ```
