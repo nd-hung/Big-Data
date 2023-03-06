@@ -3,7 +3,7 @@
 - [Giới thiệu](#intro)
 - [Cài đặt PySpark](#install_pyspark)
 - [Chạy ứng dụng PySpark](#run_pyspark)
-- [Tham khảo](#references)
+- [Tài liệu tham khảo](#references)
 
 ## Giới thiệu <a name="intro"/>
 
