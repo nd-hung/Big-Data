@@ -160,7 +160,11 @@ wordFrequencies.saveAsTextFile("/home/hung/labs/data/output/gutenberg-result")
 ### [Chạy PySpark trên cluster](https://spark.apache.org/docs/latest/submitting-applications.html)
 Để chạy ứng dụng PySpark trên cluster, cần tổ chức thành file mã nguồn độc lập, sau đó sử dụng lệnh `spark-submit` để nạp & thực thi ứng dụng.
 
-Giả sử file `wordcount.py` chứa mã nguồn PySpark đếm số lần xuất hiện của mỗi từ trong một tập dữ liệu văn bản. Từ Terminal gọi lệnh sau để nạp & chạy chương trình:
+Giả sử file `wordcount.py` chứa mã nguồn PySpark đếm số lần xuất hiện của mỗi từ trong một tập dữ liệu văn bản:
+
+https://github.com/nd-hung/Big-Data/blob/dac25d63598c82003e43f66cf88e20e9cb9c27fd/Lab4_Spark/src/wordcount.py
+
+Từ Terminal gọi lệnh sau để nạp & chạy chương trình:
 ```shell
 spark-submit wordcount.py
 ```
