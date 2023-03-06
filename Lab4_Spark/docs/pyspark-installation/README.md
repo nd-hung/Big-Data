@@ -162,7 +162,7 @@ wordFrequencies.saveAsTextFile("/home/hung/labs/data/output/gutenberg-result")
 
 Giả sử file `wordcount.py` chứa mã nguồn PySpark đếm số lần xuất hiện của mỗi từ trong một tập dữ liệu văn bản:
 
-https://github.com/nd-hung/Big-Data/blob/79962aa60876c1b40b7f4ee2eef140340e117555/Lab4_Spark/src/wordcount.py
+https://github.com/nd-hung/Big-Data/blob/79962aa60876c1b40b7f4ee2eef140340e117555/Lab4_Spark/src/wordcount.py#L1-L30
 
 ```python
 import os, shutil
