@@ -162,8 +162,32 @@ wordFrequencies.saveAsTextFile("/home/hung/labs/data/output/gutenberg-result")
 
 Giả sử file `wordcount.py` chứa mã nguồn PySpark đếm số lần xuất hiện của mỗi từ trong một tập dữ liệu văn bản:
 
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fnd-hung%2FBig-Data%2Fblob%2Fmain%2FLab4_Spark%2Fsrc%2Fwordcount.py&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
+```python
+import os, shutil
+from pyspark import SparkContext
 
+if __name__ == "__main__":
+	# create Spark context with necessary configuration
+	sc = SparkContext("local", "Text processing with PySpark Example")
+
+	# read data from text file into lines  
+	lines = sc.textFile("/home/hung/labs/data/gutenberg/")
+
+	# split the lines into words
+	words = lines.flatMap(lambda line: line.split(" "))
+
+	# count the occurrence of each word
+	wordFrequencies = words.map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
+
+	# save the set of <word, frequency> to disk
+	savingPath = "/home/hung/labs/data/output/gutenberg-result"
+
+	if os.path.isdir(savingPath):
+	    shutil.rmtree(savingPath, ignore_errors=True)
+
+	wordFrequencies.saveAsTextFile(savingPath)
+```
+             
 Từ Terminal gọi lệnh sau để nạp & chạy chương trình:
 ```shell
 spark-submit wordcount.py
