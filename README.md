@@ -1,4 +1,4 @@
-<h2 align="center"> THỰC HÀNH XỬ LÝ DỮ LIỆU LỚN </h2>
+# THỰC HÀNH XỬ LÝ DỮ LIỆU LỚN
 
 ### [Nguyễn Đình Hưng](https://nd-hung.github.io/)
 ### Khoa Công nghệ thông tin, Trường đại học Nha Trang
