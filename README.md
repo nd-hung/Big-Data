@@ -1,7 +1,7 @@
-# THỰC HÀNH XỬ LÝ DỮ LIỆU LỚN
+# Big Data Labs
 
 ### [Nguyễn Đình Hưng](https://nd-hung.github.io/)
-### Khoa Công nghệ thông tin, Trường đại học Nha Trang
+### Faculty of Information Technology, Nha Trang University
 ---
 
 ### [Lab 1 - Hadoop Installation](https://github.com/nd-hung/Big-Data/tree/main/Lab1_Hadoop_Installation)
