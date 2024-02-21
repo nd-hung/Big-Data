@@ -17,6 +17,7 @@ Bài thực hành này xử lý dữ liệu thu thập bởi [Trung tâm dữ li
 
 [Download dữ liệu đầy đủ](https://github.com/nd-hung/Big-Data/blob/main/Lab3_NCDC_WeatherData/Collect_Data.ipynb) <br>
 [Tiền xử lý dữ liệu](https://github.com/nd-hung/Big-Data/blob/main/Lab3_NCDC_WeatherData/Preprocess_Data.ipynb)
+[Download bộ dữ liệu đã được tiền xử lý](https://github.com/nd-hung/Big-Data/tree/main/datasets/NCDC/Preprocessed)
 
 **Yêu cầu**: Từ tập dữ liệu thu thập được, hãy tìm nhiệt độ cao nhất ghi nhận được của mỗi năm.
 
