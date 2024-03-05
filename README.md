@@ -4,8 +4,15 @@
 ### Faculty of Information Technology, Nha Trang University
 ---
 
+## Bài thực hành
 ### [Lab 1 - Hadoop Installation](https://github.com/nd-hung/Big-Data/tree/main/Lab1_Hadoop_Installation)
 ### [Lab 2 - Hello Big Data](https://github.com/nd-hung/Big-Data/tree/main/Lab2_WordCount)
 ### [Lab 3 - NCDC Weather Data Analysis](https://github.com/nd-hung/Big-Data/tree/main/Lab3_NCDC_WeatherData)
 ### [Lab 4 - Apache Spark](https://github.com/nd-hung/Big-Data/tree/main/Lab4_Spark)
 ### [Lab 5 - Distributed Machine Learning](https://github.com/nd-hung/Big-Data/tree/main/Lab5_DistributedMachineLearning)
+
+## Báo cáo đồ án môn học
+
+Kết thúc học phần, mỗi sinh viên chọn chủ đề trong danh sách bài tập lớn do GV cung cấp để thực hiện. Kết quả đồ án được sử dụng làm điểm đánh giá cuối kỳ.
+
+[Sinh viên thực hiện đồ án và viết báo cáo theo cấu trúc, nội dung quy định.](https://www.overleaf.com/read/qfhkffwjqkrr#0f0558)
