@@ -14,5 +14,5 @@
 ## Báo cáo đồ án môn học
 
 Kết thúc học phần, mỗi sinh viên chọn chủ đề trong danh sách bài tập lớn do GV cung cấp để thực hiện. Kết quả đồ án được sử dụng làm điểm đánh giá cuối kỳ.
-
-[Sinh viên thực hiện đồ án và viết báo cáo theo cấu trúc, nội dung quy định.](https://www.overleaf.com/read/qfhkffwjqkrr#0f0558)
+### [Cấu trúc & mẫu báo cáo](./report_template.pdf)
+### [Mẫu LaTeX báo cáo](https://www.overleaf.com/read/qfhkffwjqkrr#0f0558)
