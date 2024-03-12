@@ -18,4 +18,5 @@ Kết thúc học phần, mỗi sinh viên chọn một chủ đề trong danh s
 Kết quả đồ án (gồm sản phẩm cài đặt, bản báo cáo, vấn đáp) được sử dụng làm điểm đánh giá cuối kỳ.
 
 ### [Cấu trúc & mẫu báo cáo](./report_template.pdf)
-### [Mẫu báo cáo bằng LaTeX](https://www.overleaf.com/read/qfhkffwjqkrr#0f0558)
+### Mẫu báo cáo bằng LaTeX
+Nhằm hỗ trợ sinh viên soạn thảo báo cáo đồ án được chuyên nghiệp, nhanh chóng và miễn phí, GV tạo [mẫu báo cáo bằng LaTeX](https://www.overleaf.com/read/qfhkffwjqkrr#0f0558). Xem hướng dẫn sử dụng công cụ soạn thảo LaTeX trực tuyến Overleaf [tại đây.](https://www.overleaf.com/learn/latex/Tutorials)
