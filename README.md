@@ -11,12 +11,12 @@
 ### [Lab 4 - Apache Spark](https://github.com/nd-hung/Big-Data/tree/main/Lab4_Spark)
 ### [Lab 5 - Distributed Machine Learning](https://github.com/nd-hung/Big-Data/tree/main/Lab5_DistributedMachineLearning)
 
-## II - Báo cáo đồ án môn học
+## II - Đồ án môn học
 
-Kết thúc học phần, mỗi sinh viên chọn một chủ đề trong danh sách bài tập lớn do giảng viên cung cấp để thực hiện.
+Kết thúc học phần, mỗi sinh viên chọn một chủ đề trong danh sách do giảng viên cung cấp để thực hiện.
 
 Kết quả đồ án (gồm sản phẩm cài đặt, bản báo cáo, vấn đáp) được sử dụng làm điểm đánh giá cuối kỳ.
 
 ### [Cấu trúc & mẫu báo cáo](./report_template.pdf)
 ### Mẫu báo cáo bằng LaTeX
-Nhằm hỗ trợ sinh viên soạn thảo báo cáo đồ án được chuyên nghiệp, nhanh chóng và miễn phí, GV tạo [mẫu báo cáo bằng LaTeX](https://www.overleaf.com/read/qfhkffwjqkrr#0f0558). Xem hướng dẫn sử dụng công cụ soạn thảo LaTeX trực tuyến Overleaf [tại đây.](https://www.overleaf.com/learn/latex/Tutorials)
+Khuyến khích sinh viên sử dụng LaTeX để soạn thảo báo cáo đồ án được chuyên nghiệp, nhanh chóng và miễn phí. GV đã tạo sẵn [mẫu báo cáo bằng LaTeX](https://www.overleaf.com/read/qfhkffwjqkrr#0f0558) để SV sử dụng. Xem hướng dẫn sử dụng công cụ soạn thảo LaTeX trực tuyến Overleaf [tại đây.](https://www.overleaf.com/learn/latex/Tutorials)
