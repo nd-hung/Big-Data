@@ -11,7 +11,7 @@
 ### [Lab 4 - Apache Spark](https://github.com/nd-hung/Big-Data/tree/main/Lab4_Spark)
 ### [Lab 5 - Distributed Machine Learning](https://github.com/nd-hung/Big-Data/tree/main/Lab5_DistributedMachineLearning)
 
-## II - Báo cáo đồ án môn học
+## II - Bài tập lớn môn học
 
 Kết thúc học phần, mỗi sinh viên chọn một chủ đề trong danh sách bài tập lớn do giảng viên cung cấp để thực hiện.
 

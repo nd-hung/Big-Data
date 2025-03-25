@@ -15,7 +15,7 @@
 - [Tham khảo](#references) 
 
 ## Giới thiệu <a name="intro" />
-[Hadoop](https://hadoop.apache.org/) là nền tảng mã nguồn mở dùng để xây dựng hệ thống xử lý dữ liệu lớn (big data) theo mô hình phân tán (distributed computing). Các ưu điểm chính của Hadoop là độ tin cậy cao (reliable), khả năng mở rộng dễ dàng (scalable) và chi phí hợp lý (cost-effective). 
+[Hadoop](https://hadoop.apache.org/) là nền tảng mã nguồn mở dùng để xây dựng hệ thống xử lý dữ liệu lớn (big data) theo mô hình phân tán (distributed computing). Các ưu điểm chính của Hadoop là độ tin cậy cao (reliable), khả năng mở rộng dễ dàng (scalable) và chi phí hợp lý (cost-effective).
 
 Có thể triển khai hệ thống Hadoop theo một trong ba chế độ (mode) sau:
 - Độc lập (Standalone): 
@@ -91,11 +91,13 @@ Kiểm tra việc cài đặt bằng lệnh sau:
 ```shell
 ssh localhost
 ```
+
+<img src="figs/set_ssh_to_hdoop_user.PNG" width="60%"/>
+
 Hệ thống hiện thông báo:
 > Are you sure you want to continue connecting (yes/no)?
 
 Nhập "yes".
-<img src="figs/set_ssh_to_hdoop_user.PNG" width="60%"/>
 
 #### Tắt IPv6 
 
