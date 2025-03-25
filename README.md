@@ -12,7 +12,6 @@
 ### [Lab 5 - Distributed Machine Learning](https://github.com/nd-hung/Big-Data/tree/main/Lab5_DistributedMachineLearning)
 
 ## II - Bài tập lớn môn học
-## II - Đồ án môn học
 
 Kết thúc học phần, mỗi sinh viên chọn một chủ đề trong danh sách do giảng viên cung cấp để thực hiện.
 
